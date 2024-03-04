@@ -1,2 +1,3 @@
 com/tcloud/App.class
+com/tcloud/entity/Document$DocumentBuilder.class
 com/tcloud/entity/Document.class
