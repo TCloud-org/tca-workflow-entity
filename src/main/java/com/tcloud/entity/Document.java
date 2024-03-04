@@ -12,6 +12,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
+import java.util.concurrent.Callable;
 
 @Data
 @Builder(toBuilder = true)
@@ -25,26 +26,48 @@ public class Document {
     private static ObjectMapper objectMapper;
 
     public static Document create() {
-        try {
+        return callAndHandleException(() -> {
             objectMapper = new ObjectMapper();
             return Document.builder()
                     .documentId(UUID.randomUUID().toString())
                     .entities(objectMapper.writeValueAsBytes(new HashMap<>()))
                     .states(objectMapper.writeValueAsBytes(new ArrayList<>()))
                     .build();
-        } catch (final Exception e) {
-            e.printStackTrace();
-        }
-        return Document.builder().build();
+        });
     }
 
     public void putEntity(@NonNull final String key, @NonNull final byte[] value) {
-        try {
-            final Map<String, byte[]> deserializedEntities =
-                    objectMapper.readValue(entities, new TypeReference<Map<String, byte[]>>() {});
+        callAndHandleException(() -> {
+            final Map<String, byte[]> deserializedEntities = getDeserializedEntities();
             deserializedEntities.put(key, value);
+            return null;
+        });
+    }
+
+    public byte[] getEntity(@NonNull final String key) {
+        return callAndHandleException(() -> {
+            final Map<String, byte[]> deserializedEntities = getDeserializedEntities();
+            return deserializedEntities.get(key);
+        });
+    }
+
+    public String getEntityAsString(@NonNull final String key) {
+        return callAndHandleException(() -> {
+            final Map<String, byte[]> deserializedEntities = getDeserializedEntities();
+            return objectMapper.writeValueAsString(deserializedEntities.get(key));
+        });
+    }
+
+    private Map<String, byte[]> getDeserializedEntities() {
+        return callAndHandleException(() ->
+                objectMapper.readValue(entities, new TypeReference<Map<String, byte[]>>() {}));
+    }
+
+    private static <T> T callAndHandleException(@NonNull final Callable<T> func) {
+        try {
+            return func.call();
         } catch (final Exception e) {
-            e.printStackTrace();
+            throw new IllegalArgumentException(e);
         }
     }
 }
