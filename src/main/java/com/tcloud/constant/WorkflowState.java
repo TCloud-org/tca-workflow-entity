@@ -1,6 +1,7 @@
 package com.tcloud.constant;
 
 public enum WorkflowState {
+    PRE_STATE("pre-state"),
     INITIAL("initial-state"),
     TERMINAL("terminal");
 

@@ -1,3 +1,5 @@
 /Users/tungdinh/CS/tcloud/tca-workflow-entity/src/main/java/com/tcloud/App.java
 /Users/tungdinh/CS/tcloud/tca-workflow-entity/src/main/java/com/tcloud/entity/Document.java
 /Users/tungdinh/CS/tcloud/tca-workflow-entity/src/main/java/com/tcloud/entity/WorkflowEvent.java
+/Users/tungdinh/CS/tcloud/tca-workflow-entity/src/main/java/com/tcloud/constant/WorkflowState.java
+/Users/tungdinh/CS/tcloud/tca-workflow-entity/src/main/java/com/tcloud/constant/ActionType.java

@@ -1,6 +1,8 @@
-com/tcloud/entity/WorkflowEvent$WorkflowEventBuilder.class
+com/tcloud/constant/WorkflowState.class
 com/tcloud/App.class
-com/tcloud/entity/Document$DocumentBuilder.class
 com/tcloud/entity/WorkflowEvent.class
+com/tcloud/constant/ActionType.class
+com/tcloud/entity/WorkflowEvent$WorkflowEventBuilder.class
+com/tcloud/entity/Document$DocumentBuilder.class
 com/tcloud/entity/Document.class
 com/tcloud/entity/Document$1.class
