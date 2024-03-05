@@ -58,7 +58,7 @@ public class Document {
         });
     }
 
-    private Map<String, byte[]> getDeserializedEntities() {
+    public Map<String, byte[]> getDeserializedEntities() {
         return callAndHandleException(() ->
                 objectMapper.readValue(entities, new TypeReference<Map<String, byte[]>>() {}));
     }
