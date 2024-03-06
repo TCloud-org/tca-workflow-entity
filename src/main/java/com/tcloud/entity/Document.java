@@ -40,6 +40,7 @@ public class Document {
         callAndHandleException(() -> {
             final Map<String, byte[]> deserializedEntities = getDeserializedEntities();
             deserializedEntities.put(key, value);
+            entities = objectMapper.writeValueAsBytes(deserializedEntities);
             return null;
         });
     }
