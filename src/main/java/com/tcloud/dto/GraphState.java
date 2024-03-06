@@ -15,7 +15,7 @@ import java.time.ZonedDateTime;
 @NoArgsConstructor
 @AllArgsConstructor
 @Jacksonized
-public class WorkflowState {
+public class GraphState {
 
     @Min(value = 1)
     private Long workflowStateId;
