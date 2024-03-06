@@ -61,7 +61,7 @@ public class Document {
 
     public Map<String, byte[]> getDeserializedEntities() {
         return callAndHandleException(() ->
-                objectMapper.readValue(entities, new TypeReference<Map<String, byte[]>>() {}));
+                objectMapper.readValue(entities.clone(), new TypeReference<Map<String, byte[]>>() {}));
     }
 
     private static <T> T callAndHandleException(@NonNull final Callable<T> func) {
