@@ -1,15 +1,12 @@
 package com.tcloud.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NonNull;
 import lombok.extern.jackson.Jacksonized;
 
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 import java.util.concurrent.Callable;
@@ -19,8 +16,8 @@ import java.util.concurrent.Callable;
 @Jacksonized
 public class Document {
     private String documentId;
-    private byte[] entities;
-    private byte[] states;
+    private DocumentBody documentBody;
+    private DocumentState documentState;
 
     @JsonIgnore
     private static ObjectMapper objectMapper;
@@ -30,38 +27,29 @@ public class Document {
             objectMapper = new ObjectMapper();
             return Document.builder()
                     .documentId(UUID.randomUUID().toString())
-                    .entities(objectMapper.writeValueAsBytes(new HashMap<>()))
-                    .states(objectMapper.writeValueAsBytes(new ArrayList<>()))
+                    .documentBody(DocumentBody.create())
+                    .documentState(DocumentState.create())
                     .build();
         });
     }
 
     public void putEntity(@NonNull final String key, @NonNull final byte[] value) {
         callAndHandleException(() -> {
-            final Map<String, byte[]> deserializedEntities = getDeserializedEntities();
-            deserializedEntities.put(key, value);
-            entities = objectMapper.writeValueAsBytes(deserializedEntities);
+            final Map<String, byte[]> entities = documentBody.getEntities();
+            entities.put(key, value);
+            documentBody = documentBody.toBuilder()
+                    .entities(entities)
+                    .build();
             return null;
         });
     }
 
     public byte[] getEntity(@NonNull final String key) {
-        return callAndHandleException(() -> {
-            final Map<String, byte[]> deserializedEntities = getDeserializedEntities();
-            return deserializedEntities.get(key);
-        });
+        return documentBody.getEntities().get(key);
     }
 
     public String getEntityAsString(@NonNull final String key) {
-        return callAndHandleException(() -> {
-            final Map<String, byte[]> deserializedEntities = getDeserializedEntities();
-            return objectMapper.writeValueAsString(deserializedEntities.get(key));
-        });
-    }
-
-    public Map<String, byte[]> getDeserializedEntities() {
-        return callAndHandleException(() ->
-                objectMapper.readValue(entities.clone(), new TypeReference<Map<String, byte[]>>() {}));
+        return callAndHandleException(() -> objectMapper.writeValueAsString(documentBody.getEntities().get(key)));
     }
 
     private static <T> T callAndHandleException(@NonNull final Callable<T> func) {
