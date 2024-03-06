@@ -11,15 +11,15 @@ com/tcloud/entity/DocumentState$DocumentStateBuilder.class
 com/tcloud/entity/WorkflowEvent$WorkflowEventBuilder.class
 com/tcloud/dto/XMLVisualEdge.class
 com/tcloud/entity/Document.class
-com/tcloud/dto/WorkflowState.class
 com/tcloud/entity/WorkflowEvent.class
 com/tcloud/dto/XMLVisualization$XMLVisualizationBuilder.class
 com/tcloud/entity/DocumentState.class
 com/tcloud/dto/XMLVisualNodeData.class
 com/tcloud/dto/XMLVisualNode.class
-com/tcloud/dto/WorkflowState$WorkflowStateBuilder.class
+com/tcloud/dto/GraphState$GraphStateBuilder.class
 com/tcloud/entity/DocumentBody.class
 com/tcloud/entity/DocumentBody$DocumentBodyBuilder.class
 com/tcloud/dto/Workflow$WorkflowBuilder.class
+com/tcloud/dto/GraphState.class
 com/tcloud/dto/XMLVisualNodeData$XMLVisualNodeDataBuilder.class
 com/tcloud/dto/XMLVisualEdge$XMLVisualEdgeBuilder.class

@@ -30,6 +30,8 @@ public class Graph {
     @NotBlank
     private String xmlContent;
 
+    private XMLParsedGraphResult parsedGraphResult;
+
     @Min(1)
     private Long version;
 
