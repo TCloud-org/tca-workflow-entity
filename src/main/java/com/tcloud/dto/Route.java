@@ -17,6 +17,10 @@ import java.time.ZonedDateTime;
 public class Route {
     private Long routeId;
 
+    private Long graphId;
+
+    private Long workflowId;
+
     private String workId;
 
     private String source;
@@ -28,8 +32,6 @@ public class Route {
     private String resultType;
 
     private String resultName;
-
-    private Long graphId;
 
     private ZonedDateTime createdAt;
 
