@@ -16,6 +16,8 @@ import java.time.ZonedDateTime;
 public class Route {
     private Long routeId;
 
+    private String workId;
+
     private String source;
 
     private String service;
