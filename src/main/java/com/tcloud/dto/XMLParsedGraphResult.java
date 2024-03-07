@@ -10,5 +10,6 @@ import java.util.Map;
 @Data
 @Jacksonized
 public class XMLParsedGraphResult {
+    private String initialState;
     private Map<String, XMLGraphState> result;
 }
