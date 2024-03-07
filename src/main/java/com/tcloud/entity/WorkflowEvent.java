@@ -17,6 +17,9 @@ import java.time.ZonedDateTime;
 @AllArgsConstructor
 public class WorkflowEvent {
 
+    @JsonProperty("workId")
+    private String workId;
+
     @JsonProperty("document")
     private Document document;
 
