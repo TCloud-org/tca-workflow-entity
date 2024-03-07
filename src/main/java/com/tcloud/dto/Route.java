@@ -38,4 +38,6 @@ public class Route {
     private Document document;
 
     private Long version;
+
+    private Integer runningOrder;
 }
