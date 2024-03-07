@@ -23,11 +23,8 @@ public class WorkflowEvent {
     @JsonProperty("document")
     private Document document;
 
-    @JsonProperty("currentState")
-    private String currentState;
-
-    @JsonProperty("nextState")
-    private String nextState;
+    @JsonProperty("source")
+    private String source;
 
     @JsonProperty("graph")
     private Graph graph;
