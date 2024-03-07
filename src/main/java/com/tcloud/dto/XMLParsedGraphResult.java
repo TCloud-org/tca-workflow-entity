@@ -10,5 +10,5 @@ import java.util.Map;
 @Data
 @Jacksonized
 public class XMLParsedGraphResult {
-    private Map<String, byte[]> result;
+    private Map<String, XMLGraphState> result;
 }
