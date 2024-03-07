@@ -3,11 +3,15 @@
 /Users/tungdinh/CS/tcloud/tca-workflow-entity/src/main/java/com/tcloud/dto/XMLVisualNodeData.java
 /Users/tungdinh/CS/tcloud/tca-workflow-entity/src/main/java/com/tcloud/dto/Workflow.java
 /Users/tungdinh/CS/tcloud/tca-workflow-entity/src/main/java/com/tcloud/entity/DocumentBody.java
+/Users/tungdinh/CS/tcloud/tca-workflow-entity/src/main/java/com/tcloud/dto/XMLGraphState.java
 /Users/tungdinh/CS/tcloud/tca-workflow-entity/src/main/java/com/tcloud/constant/ActionType.java
 /Users/tungdinh/CS/tcloud/tca-workflow-entity/src/main/java/com/tcloud/dto/GraphState.java
+/Users/tungdinh/CS/tcloud/tca-workflow-entity/src/main/java/com/tcloud/dto/XMLGraphStateResult.java
 /Users/tungdinh/CS/tcloud/tca-workflow-entity/src/main/java/com/tcloud/dto/Graph.java
 /Users/tungdinh/CS/tcloud/tca-workflow-entity/src/main/java/com/tcloud/entity/Document.java
 /Users/tungdinh/CS/tcloud/tca-workflow-entity/src/main/java/com/tcloud/entity/WorkflowEvent.java
+/Users/tungdinh/CS/tcloud/tca-workflow-entity/src/main/java/com/tcloud/dto/XMLGraphStateResultBody.java
+/Users/tungdinh/CS/tcloud/tca-workflow-entity/src/main/java/com/tcloud/dto/XMLParsedGraphResult.java
 /Users/tungdinh/CS/tcloud/tca-workflow-entity/src/main/java/com/tcloud/constant/WorkflowState.java
 /Users/tungdinh/CS/tcloud/tca-workflow-entity/src/main/java/com/tcloud/dto/XMLVisualization.java
 /Users/tungdinh/CS/tcloud/tca-workflow-entity/src/main/java/com/tcloud/dto/XMLVisualNode.java

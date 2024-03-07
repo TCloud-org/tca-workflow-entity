@@ -1,6 +1,7 @@
 package com.tcloud.entity;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.tcloud.dto.Graph;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -24,6 +25,9 @@ public class WorkflowEvent {
 
     @JsonProperty("nextState")
     private String nextState;
+
+    @JsonProperty("graph")
+    private Graph graph;
 
     @JsonProperty("sentAt")
     private ZonedDateTime sentAt;
