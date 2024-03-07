@@ -16,6 +16,7 @@ com/tcloud/entity/WorkflowEvent$WorkflowEventBuilder.class
 com/tcloud/dto/XMLVisualEdge.class
 com/tcloud/entity/Document.class
 com/tcloud/entity/WorkflowEvent.class
+com/tcloud/dto/Route$RouteBuilder.class
 com/tcloud/dto/XMLVisualization$XMLVisualizationBuilder.class
 com/tcloud/entity/DocumentState.class
 com/tcloud/dto/XMLGraphStateResultBody$XMLGraphStateResultBodyBuilder.class
@@ -27,6 +28,7 @@ com/tcloud/entity/DocumentBody.class
 com/tcloud/entity/DocumentBody$DocumentBodyBuilder.class
 com/tcloud/dto/Workflow$WorkflowBuilder.class
 com/tcloud/dto/GraphState.class
+com/tcloud/dto/Route.class
 com/tcloud/dto/XMLGraphStateResult$XMLGraphStateResultBuilder.class
 com/tcloud/dto/XMLParsedGraphResult.class
 com/tcloud/dto/XMLVisualNodeData$XMLVisualNodeDataBuilder.class

@@ -1,5 +1,6 @@
 package com.tcloud.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.tcloud.dto.Graph;
 import lombok.AllArgsConstructor;
@@ -15,6 +16,7 @@ import java.time.ZonedDateTime;
 @Jacksonized
 @NoArgsConstructor
 @AllArgsConstructor
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class WorkflowEvent {
 
     @JsonProperty("workId")
