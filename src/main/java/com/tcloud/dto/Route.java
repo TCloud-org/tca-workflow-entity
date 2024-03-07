@@ -1,5 +1,6 @@
 package com.tcloud.dto;
 
+import com.tcloud.entity.Document;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -31,4 +32,6 @@ public class Route {
     private Long graphId;
 
     private ZonedDateTime createdAt;
+
+    private Document document;
 }

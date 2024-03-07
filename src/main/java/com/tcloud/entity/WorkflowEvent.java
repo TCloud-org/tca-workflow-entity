@@ -33,4 +33,7 @@ public class WorkflowEvent {
 
     @JsonProperty("sentAt")
     private ZonedDateTime sentAt;
+
+    @JsonProperty("version")
+    private Long version;
 }
