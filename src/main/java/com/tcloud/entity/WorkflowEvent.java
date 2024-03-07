@@ -36,4 +36,7 @@ public class WorkflowEvent {
 
     @JsonProperty("version")
     private Long version;
+
+    @JsonProperty("runningOrder")
+    private int runningOrder;
 }
