@@ -34,4 +34,6 @@ public class Route {
     private ZonedDateTime createdAt;
 
     private Document document;
+
+    private Long version;
 }
