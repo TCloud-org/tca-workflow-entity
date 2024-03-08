@@ -1,3 +1,4 @@
+/Users/tungdinh/CS/tcloud/tca-workflow-entity/src/main/java/com/tcloud/entity/WorkResponse.java
 /Users/tungdinh/CS/tcloud/tca-workflow-entity/src/main/java/com/tcloud/App.java
 /Users/tungdinh/CS/tcloud/tca-workflow-entity/src/main/java/com/tcloud/dto/XMLVisualEdge.java
 /Users/tungdinh/CS/tcloud/tca-workflow-entity/src/main/java/com/tcloud/dto/XMLVisualNodeData.java
@@ -17,3 +18,4 @@
 /Users/tungdinh/CS/tcloud/tca-workflow-entity/src/main/java/com/tcloud/dto/XMLVisualization.java
 /Users/tungdinh/CS/tcloud/tca-workflow-entity/src/main/java/com/tcloud/dto/XMLVisualNode.java
 /Users/tungdinh/CS/tcloud/tca-workflow-entity/src/main/java/com/tcloud/entity/DocumentState.java
+/Users/tungdinh/CS/tcloud/tca-workflow-entity/src/main/java/com/tcloud/entity/WorkRequest.java

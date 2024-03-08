@@ -1,9 +1,13 @@
 com/tcloud/dto/XMLGraphStateResultBody.class
+com/tcloud/entity/WorkResponse.class
+com/tcloud/entity/WorkRequest$WorkRequestBuilder.class
 com/tcloud/dto/XMLVisualNode$XMLVisualNodeBuilder.class
 com/tcloud/dto/XMLParsedGraphResult$XMLParsedGraphResultBuilder.class
+com/tcloud/entity/WorkResponse$WorkResponseBuilder.class
 com/tcloud/constant/ActionType.class
 com/tcloud/dto/Graph$GraphBuilder.class
 com/tcloud/entity/Document$DocumentBuilder.class
+com/tcloud/entity/WorkRequest.class
 com/tcloud/dto/XMLVisualization.class
 com/tcloud/dto/Graph.class
 com/tcloud/constant/WorkflowState.class
