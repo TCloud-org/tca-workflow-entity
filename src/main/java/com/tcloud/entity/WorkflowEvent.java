@@ -25,6 +25,9 @@ public class WorkflowEvent {
     @JsonProperty("workId")
     private String workId;
 
+    @JsonProperty("alias")
+    private String alias;
+
     @JsonProperty("document")
     private Document document;
 
