@@ -2,6 +2,7 @@ com/tcloud/dto/XMLGraphStateResultBody.class
 com/tcloud/entity/WorkResponse.class
 com/tcloud/entity/WorkRequest$WorkRequestBuilder.class
 com/tcloud/dto/XMLVisualNode$XMLVisualNodeBuilder.class
+com/tcloud/dto/ServiceConfiguration.class
 com/tcloud/dto/XMLParsedGraphResult$XMLParsedGraphResultBuilder.class
 com/tcloud/entity/WorkResponse$WorkResponseBuilder.class
 com/tcloud/constant/ActionType.class
@@ -25,6 +26,7 @@ com/tcloud/dto/XMLVisualization$XMLVisualizationBuilder.class
 com/tcloud/entity/DocumentState.class
 com/tcloud/dto/XMLGraphStateResultBody$XMLGraphStateResultBodyBuilder.class
 com/tcloud/dto/XMLVisualNodeData.class
+com/tcloud/dto/ServiceConfiguration$ServiceConfigurationBuilder.class
 com/tcloud/dto/XMLGraphState.class
 com/tcloud/dto/XMLVisualNode.class
 com/tcloud/dto/GraphState$GraphStateBuilder.class
@@ -36,4 +38,5 @@ com/tcloud/dto/Route.class
 com/tcloud/dto/XMLGraphStateResult$XMLGraphStateResultBuilder.class
 com/tcloud/dto/XMLParsedGraphResult.class
 com/tcloud/dto/XMLVisualNodeData$XMLVisualNodeDataBuilder.class
+com/tcloud/constant/Environment.class
 com/tcloud/dto/XMLVisualEdge$XMLVisualEdgeBuilder.class
