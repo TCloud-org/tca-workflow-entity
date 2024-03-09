@@ -1,9 +1,9 @@
 #!/bin/bash
 
+mvn clean deploy
+
 git add .
 
 git commit -m "Changes"
-
-mvn clean deploy
 
 git push
