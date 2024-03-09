@@ -25,6 +25,8 @@ public class Graph {
     @Min(1)
     private Long workflowId;
 
+    private Long clientId;
+
     private String description;
 
     private String alias;
