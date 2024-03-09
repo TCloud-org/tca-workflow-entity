@@ -13,7 +13,6 @@
 /Users/tungdinh/CS/tcloud/tca-workflow-entity/src/main/java/com/tcloud/dto/Graph.java
 /Users/tungdinh/CS/tcloud/tca-workflow-entity/src/main/java/com/tcloud/entity/Document.java
 /Users/tungdinh/CS/tcloud/tca-workflow-entity/src/main/java/com/tcloud/entity/WorkflowEvent.java
-/Users/tungdinh/CS/tcloud/tca-workflow-entity/src/main/java/com/tcloud/dto/XMLGraphStateResultBody.java
 /Users/tungdinh/CS/tcloud/tca-workflow-entity/src/main/java/com/tcloud/dto/XMLParsedGraphResult.java
 /Users/tungdinh/CS/tcloud/tca-workflow-entity/src/main/java/com/tcloud/constant/WorkflowState.java
 /Users/tungdinh/CS/tcloud/tca-workflow-entity/src/main/java/com/tcloud/dto/XMLVisualization.java

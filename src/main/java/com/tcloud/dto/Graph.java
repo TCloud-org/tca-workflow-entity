@@ -1,6 +1,7 @@
 package com.tcloud.dto;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
@@ -16,6 +17,7 @@ import java.time.ZonedDateTime;
 @NoArgsConstructor
 @AllArgsConstructor
 @Jacksonized
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Graph {
     @Min(1)
     private Long graphId;

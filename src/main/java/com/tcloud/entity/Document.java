@@ -1,6 +1,7 @@
 package com.tcloud.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.Builder;
 import lombok.Data;
@@ -14,6 +15,7 @@ import java.util.concurrent.Callable;
 @Data
 @Builder(toBuilder = true)
 @Jacksonized
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Document {
     private String documentId;
     private DocumentBody documentBody;

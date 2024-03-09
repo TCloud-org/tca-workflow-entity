@@ -19,6 +19,9 @@ import java.time.ZonedDateTime;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class WorkflowEvent {
 
+    @JsonProperty("clientId")
+    private String clientId;
+
     @JsonProperty("workId")
     private String workId;
 
