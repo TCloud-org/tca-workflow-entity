@@ -44,4 +44,6 @@ public class Route {
     private Integer runningOrder;
 
     private Long executionTime;
+
+    private DocumentEntityChangeLog documentEntityChangeLog;
 }
