@@ -42,4 +42,6 @@ public class Route {
     private Long version;
 
     private Integer runningOrder;
+
+    private Long executionTime;
 }
