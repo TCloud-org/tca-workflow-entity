@@ -13,5 +13,6 @@ public class XMLGraphState {
     private String source;
     private String service;
     private String operation;
+    private Integer runningOrder;
     private Map<String, XMLGraphStateResult> resultMap;
 }
