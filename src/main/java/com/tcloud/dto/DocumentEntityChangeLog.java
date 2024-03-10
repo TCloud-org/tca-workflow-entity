@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.extern.jackson.Jacksonized;
 
+import java.time.ZonedDateTime;
 import java.util.Map;
 
 @Data
@@ -17,4 +18,5 @@ public class DocumentEntityChangeLog {
     private Map<String, byte[]> added;
     private Map<String, byte[]> removed;
     private Map<String, byte[]> modified;
+    private ZonedDateTime createdAt;
 }

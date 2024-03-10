@@ -4,6 +4,8 @@ import com.tcloud.dto.DocumentEntityChangeLog;
 import com.tcloud.entity.Document;
 import lombok.NonNull;
 
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
@@ -51,6 +53,7 @@ public final class DocumentUtility {
                 .added(added)
                 .removed(removed)
                 .modified(modified)
+                .createdAt(ZonedDateTime.now(ZoneId.of("UTC")))
                 .build();
     }
 }
