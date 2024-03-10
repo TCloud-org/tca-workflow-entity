@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.extern.jackson.Jacksonized;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @Data
@@ -13,7 +14,7 @@ import java.util.Map;
 @Jacksonized
 public class DocumentBody {
     private Map<String, byte[]> entities;
-    private DocumentEntityChangeLog changeLog;
+    private List<DocumentEntityChangeLog> changeLogs;
 
     public static DocumentBody create() {
         return DocumentBody.builder()
