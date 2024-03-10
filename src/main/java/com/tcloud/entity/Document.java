@@ -3,6 +3,7 @@ package com.tcloud.entity;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.tcloud.dto.DocumentEntityChangeLog;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NonNull;
@@ -33,6 +34,10 @@ public class Document {
                     .documentState(DocumentState.create())
                     .build();
         });
+    }
+
+    public void setDocumentEntityChangeLog(@NonNull final DocumentEntityChangeLog changeLog) {
+        documentBody.setChangeLog(changeLog);
     }
 
     public void putEntity(@NonNull final String key, @NonNull final byte[] value) {
