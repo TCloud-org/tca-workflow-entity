@@ -42,4 +42,6 @@ public class DisplayRoute {
     private Long version;
 
     private Integer runningOrder;
+
+    private Long executionTime;
 }
