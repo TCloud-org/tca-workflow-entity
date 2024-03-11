@@ -53,6 +53,6 @@ public class WorkflowEvent {
     private ZonedDateTime nextRetryAt;
 
     public String getCompositeKey() {
-        return String.format("%s-%s-%s-%s-%d-%d", clientId, workId, alias, source, runningOrder, version);
+        return String.format("%s-%s-%s/%s/%d-%d", clientId, workId, alias, source, runningOrder, version);
     }
 }
