@@ -46,4 +46,8 @@ public class Route {
     private Long executionTime;
 
     private DocumentEntityChangeLog documentEntityChangeLog;
+
+    private String retryScheduleId;
+
+    private ZonedDateTime nextRetryAt;
 }

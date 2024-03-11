@@ -45,4 +45,10 @@ public class WorkflowEvent {
 
     @JsonProperty("runningOrder")
     private Integer runningOrder;
+
+    @JsonProperty("retryScheduleId")
+    private String retryScheduleId;
+
+    @JsonProperty("nextRetryAt")
+    private ZonedDateTime nextRetryAt;
 }
