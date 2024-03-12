@@ -20,4 +20,6 @@ public class XMLVisualization {
 
     @NonNull
     private List<XMLVisualEdge> edges;
+
+    private XMLTreeNode treeNode;
 }
