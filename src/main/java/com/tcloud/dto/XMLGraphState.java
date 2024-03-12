@@ -10,6 +10,7 @@ import java.util.Map;
 @Data
 @Jacksonized
 public class XMLGraphState {
+    private String type;
     private String source;
     private String service;
     private String operation;
