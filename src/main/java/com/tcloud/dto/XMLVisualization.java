@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 import lombok.NonNull;
 import lombok.extern.jackson.Jacksonized;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Data
@@ -23,5 +24,6 @@ public class XMLVisualization {
 
     private XMLTreeNode treeNode;
 
-    private List<String> treeNodeIds;
+    @Builder.Default
+    private List<String> treeNodeIds = new ArrayList<>();
 }
