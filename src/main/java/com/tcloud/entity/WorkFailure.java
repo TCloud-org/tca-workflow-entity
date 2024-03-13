@@ -1,7 +1,6 @@
 package com.tcloud.entity;
 
 import com.tcloud.constant.ActionType;
-import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
