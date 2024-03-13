@@ -22,4 +22,6 @@ public class XMLVisualization {
     private List<XMLVisualEdge> edges;
 
     private XMLTreeNode treeNode;
+
+    private List<String> treeNodeIds;
 }
