@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NonNull;
 import lombok.extern.jackson.Jacksonized;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Builder(toBuilder = true)
@@ -15,7 +16,9 @@ import java.util.List;
 public class XMLTreeNode {
     private String id;
     private String name;
-    private List<XMLTreeNode> children;
+
+    @Builder.Default
+    private List<XMLTreeNode> children = new ArrayList<>();
 
     public void addToChildren(@NonNull final XMLTreeNode node) {
         children.add(node);
