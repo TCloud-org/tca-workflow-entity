@@ -10,6 +10,7 @@ import lombok.NoArgsConstructor;
 import lombok.extern.jackson.Jacksonized;
 
 import java.time.ZonedDateTime;
+import java.util.UUID;
 
 @Data
 @Builder(toBuilder = true)
@@ -54,5 +55,9 @@ public class WorkflowEvent {
 
     public String getCompositeKey() {
         return String.format("%s-%s-%s.%s.%d-%d", clientId, workId, alias, source, runningOrder, version);
+    }
+
+    public String getUniqueKey() {
+        return UUID.randomUUID().toString();
     }
 }
