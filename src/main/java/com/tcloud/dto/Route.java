@@ -37,7 +37,7 @@ public class Route {
 
     private Document document;
 
-    private Exception error;
+    private String error;
 
     private Long version;
 
