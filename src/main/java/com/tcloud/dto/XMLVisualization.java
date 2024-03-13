@@ -4,7 +4,6 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.NonNull;
 import lombok.extern.jackson.Jacksonized;
 
 import java.util.ArrayList;
@@ -16,11 +15,11 @@ import java.util.List;
 @AllArgsConstructor
 @Jacksonized
 public class XMLVisualization {
-    @NonNull
-    private List<XMLVisualNode> nodes;
+    @Builder.Default
+    private List<XMLVisualNode> nodes = new ArrayList<>();
 
-    @NonNull
-    private List<XMLVisualEdge> edges;
+    @Builder.Default
+    private List<XMLVisualEdge> edges = new ArrayList<>();
 
     private XMLTreeNode treeNode;
 
