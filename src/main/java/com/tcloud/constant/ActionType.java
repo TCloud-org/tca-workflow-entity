@@ -1,6 +1,7 @@
 package com.tcloud.constant;
 
 public enum ActionType {
+    NOTIFIED("notified"),
     SUCCESS("success"),
     FAILURE("failure"),
     PENDING("pending"),
