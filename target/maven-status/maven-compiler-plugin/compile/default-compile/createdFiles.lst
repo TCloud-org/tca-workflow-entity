@@ -11,6 +11,7 @@ com/tcloud/dto/XMLVisualization.class
 com/tcloud/dto/DocumentEntityChangeLog$DocumentEntityChangeLogBuilder.class
 com/tcloud/App.class
 com/tcloud/dto/XMLGraphState$XMLGraphStateBuilder.class
+com/tcloud/entity/StateNotification.class
 com/tcloud/entity/WorkPending.class
 com/tcloud/entity/DocumentState$DocumentStateBuilder.class
 com/tcloud/dto/XMLGraphStateResult.class
@@ -19,6 +20,7 @@ com/tcloud/dto/XMLVisualEdge.class
 com/tcloud/entity/Document.class
 com/tcloud/entity/WorkFailure$WorkFailureBuilder.class
 com/tcloud/entity/WorkResponse$WorkResponseBuilderImpl.class
+com/tcloud/entity/StateNotification$StateNotificationBuilder.class
 com/tcloud/dto/Route$RouteBuilder.class
 com/tcloud/dto/XMLVisualization$XMLVisualizationBuilder.class
 com/tcloud/entity/WorkSuccess$1.class

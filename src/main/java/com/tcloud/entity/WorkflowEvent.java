@@ -47,6 +47,9 @@ public class WorkflowEvent {
     @JsonProperty("runningOrder")
     private Integer runningOrder;
 
+    @JsonProperty("stateNotification")
+    private StateNotification stateNotification;
+
     @JsonProperty("retryScheduleId")
     private String retryScheduleId;
 
