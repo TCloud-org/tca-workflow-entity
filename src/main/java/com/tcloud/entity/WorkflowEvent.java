@@ -56,6 +56,9 @@ public class WorkflowEvent {
     @JsonProperty("nextRetryAt")
     private ZonedDateTime nextRetryAt;
 
+    @JsonProperty("notifiedAt")
+    private ZonedDateTime notifiedAt;
+
     public String getCompositeKey() {
         return String.format("%s-%s-%s.%s.%d-%d", clientId, workId, alias, source, runningOrder, version);
     }
