@@ -3,6 +3,7 @@ package com.tcloud.entity;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.tcloud.dto.DocumentEntityChangeLog;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NonNull;
@@ -11,6 +12,8 @@ import lombok.extern.jackson.Jacksonized;
 import java.util.Map;
 import java.util.UUID;
 import java.util.concurrent.Callable;
+
+import static com.tcloud.utility.DocumentUtility.getEntityDiff;
 
 @Data
 @Builder(toBuilder = true)
@@ -35,10 +38,28 @@ public class Document {
         });
     }
 
+    public void merge(@NonNull final Document other) {
+        final DocumentEntityChangeLog changeLog = getEntityDiff(this, other);
+        changeLog.getAdded().forEach(this::putEntity);
+        changeLog.getModified().forEach(this::putEntity);
+        changeLog.getRemoved().keySet().forEach(this::removeEntity);
+    }
+
     public void putEntity(@NonNull final String key, @NonNull final byte[] value) {
         callAndHandleException(() -> {
             final Map<String, byte[]> entities = documentBody.getEntities();
             entities.put(key, value);
+            documentBody = documentBody.toBuilder()
+                    .entities(entities)
+                    .build();
+            return null;
+        });
+    }
+
+    public void removeEntity(@NonNull final String key) {
+        callAndHandleException(() -> {
+            final Map<String, byte[]> entities = documentBody.getEntities();
+            entities.remove(key);
             documentBody = documentBody.toBuilder()
                     .entities(entities)
                     .build();

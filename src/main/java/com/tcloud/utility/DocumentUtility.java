@@ -15,6 +15,15 @@ public final class DocumentUtility {
         throw new IllegalStateException("This class can't be initialized");
     }
 
+    public static Document mergeEntities(@NonNull final Document d1,
+                                         @NonNull final Document d2) {
+        final DocumentEntityChangeLog changeLog = getEntityDiff(d1, d2);
+        changeLog.getAdded().forEach(d1::putEntity);
+        changeLog.getModified().forEach(d1::putEntity);
+        changeLog.getRemoved().keySet().forEach(d1::removeEntity);
+        return d1;
+    }
+
     public static DocumentEntityChangeLog getEntityDiff(@NonNull final Document d1,
                                                         @NonNull final Document d2) {
         return compareMaps(d1.getDocumentBody().getEntities(), d2.getDocumentBody().getEntities());
