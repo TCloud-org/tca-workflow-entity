@@ -15,5 +15,4 @@ public class StateNotification {
     private String resultType;
     private String resultName;
     private Document document;
-    private ZonedDateTime notifiedAt;
 }
