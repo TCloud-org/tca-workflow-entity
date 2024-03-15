@@ -38,7 +38,10 @@ public class Document {
         });
     }
 
-    public void merge(@NonNull final Document other) {
+    public void merge(final Document other) {
+        if (other == null) {
+            return;
+        }
         final DocumentEntityChangeLog changeLog = getEntityDiff(this, other);
         changeLog.getAdded().forEach(this::putEntity);
         changeLog.getModified().forEach(this::putEntity);
