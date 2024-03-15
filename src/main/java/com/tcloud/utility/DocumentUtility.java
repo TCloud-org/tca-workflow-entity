@@ -15,8 +15,11 @@ public final class DocumentUtility {
         throw new IllegalStateException("This class can't be initialized");
     }
 
-    public static Document mergeEntities(@NonNull final Document d1,
-                                         @NonNull final Document d2) {
+    public static Document mergeEntities(final Document d1,
+                                         final Document d2) {
+        if (d1 == null || d2 == null) {
+            return d1;
+        }
         final DocumentEntityChangeLog changeLog = getEntityDiff(d1, d2);
         changeLog.getAdded().forEach(d1::putEntity);
         changeLog.getModified().forEach(d1::putEntity);
@@ -24,13 +27,16 @@ public final class DocumentUtility {
         return d1;
     }
 
-    public static DocumentEntityChangeLog getEntityDiff(@NonNull final Document d1,
-                                                        @NonNull final Document d2) {
+    public static DocumentEntityChangeLog getEntityDiff(final Document d1,
+                                                        final Document d2) {
+        if (d1 == null || d2 == null) {
+            return DocumentEntityChangeLog.create();
+        }
         return compareMaps(d1.getDocumentBody().getEntities(), d2.getDocumentBody().getEntities());
     }
 
-    public static DocumentEntityChangeLog compareMaps(@NonNull final Map<String, byte[]> map1,
-                                                      @NonNull final Map<String, byte[]> map2) {
+    public static DocumentEntityChangeLog compareMaps(final Map<String, byte[]> map1,
+                                                      final Map<String, byte[]> map2) {
         final Map<String, byte[]> added = new HashMap<>();
         final Map<String, byte[]> removed = new HashMap<>();
         final Map<String, byte[]> modified = new HashMap<>();
