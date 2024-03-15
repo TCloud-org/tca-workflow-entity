@@ -20,24 +20,24 @@ public class WorkFailure extends WorkResponse {
 
     private Exception exception;
 
-    public WorkFailure(@NonNull final String actionName) {
+    public WorkFailure(final String actionName) {
         super(null, ActionType.FAILURE.getValue(), actionName);
     }
 
-    public WorkFailure(@NonNull final String actionName,
-                       @NonNull final Document document) {
+    public WorkFailure(final String actionName,
+                       final Document document) {
         super(document, ActionType.FAILURE.getValue(), actionName);
     }
 
-    public WorkFailure(@NonNull final String actionName,
-                       @NonNull final Exception exception) {
+    public WorkFailure(final String actionName,
+                       final Exception exception) {
         super(null, ActionType.FAILURE.getValue(), actionName);
         this.exception = exception;
     }
 
-    public WorkFailure(@NonNull final String actionName,
-                       @NonNull final Document document,
-                       @NonNull final Exception exception) {
+    public WorkFailure(final String actionName,
+                       final Document document,
+                       final Exception exception) {
         super(document, ActionType.FAILURE.getValue(), actionName);
         this.exception = exception;
     }

@@ -19,12 +19,12 @@ public class WorkSuccess extends WorkResponse {
     @Builder.Default
     private String actionType = ActionType.SUCCESS.getValue();
 
-    public WorkSuccess(@NonNull final String actionName) {
+    public WorkSuccess(final String actionName) {
         super(null, ActionType.SUCCESS.getValue(), actionName);
     }
 
-    public WorkSuccess(@NonNull final String actionName,
-                       @NonNull final Document document) {
+    public WorkSuccess(final String actionName,
+                       final Document document) {
         super(document, ActionType.SUCCESS.getValue(), actionName);
     }
 }
