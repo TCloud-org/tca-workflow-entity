@@ -27,4 +27,5 @@ public class Workflow {
     private ZonedDateTime createdAt;
     @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSXXX")
     private ZonedDateTime updatedAt;
+    private Long nextAvailableVersion;
 }
