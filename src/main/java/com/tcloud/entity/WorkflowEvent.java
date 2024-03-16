@@ -3,6 +3,7 @@ package com.tcloud.entity;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.tcloud.dto.Graph;
+import com.tcloud.dto.WorkflowRunConfiguration;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -58,6 +59,9 @@ public class WorkflowEvent {
 
     @JsonProperty("notifiedAt")
     private ZonedDateTime notifiedAt;
+
+    @JsonProperty("workflowConfiguration")
+    private WorkflowRunConfiguration workflowConfiguration;
 
     public String getCompositeKey() {
         return String.format("%s-%s-%s.%s.%d-%d", clientId, workId, alias, source, runningOrder, version);
