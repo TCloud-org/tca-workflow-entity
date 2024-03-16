@@ -15,7 +15,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Jacksonized
-public class WorkflowConfiguration {
+public class WorkflowRunConfiguration {
     private Configuration workflowConfiguration;
     private List<Configuration> stateConfigurations;
 }

@@ -11,7 +11,6 @@ com/tcloud/dto/DocumentEntityChangeLog$DocumentEntityChangeLogBuilder.class
 com/tcloud/App.class
 com/tcloud/dto/XMLGraphState$XMLGraphStateBuilder.class
 com/tcloud/entity/StateNotification.class
-com/tcloud/dto/WorkflowConfiguration.class
 com/tcloud/entity/WorkPending.class
 com/tcloud/entity/DocumentState$DocumentStateBuilder.class
 com/tcloud/dto/XMLGraphStateResult.class
@@ -43,6 +42,7 @@ com/tcloud/entity/WorkResponse$WorkResponseBuilder.class
 com/tcloud/dto/Graph$GraphBuilder.class
 com/tcloud/entity/WorkRequest.class
 com/tcloud/entity/WorkSuccess.class
+com/tcloud/dto/WorkflowRunConfiguration.class
 com/tcloud/dto/Graph.class
 com/tcloud/constant/WorkflowState.class
 com/tcloud/dto/Workflow.class
@@ -51,7 +51,6 @@ com/tcloud/entity/WorkSuccess$WorkSuccessBuilderImpl.class
 com/tcloud/dto/XMLTreeNode.class
 com/tcloud/entity/WorkflowEvent.class
 com/tcloud/dto/DocumentEntityChangeLog.class
-com/tcloud/dto/WorkflowConfiguration$WorkflowConfigurationBuilder.class
 com/tcloud/entity/DocumentState.class
 com/tcloud/dto/XMLGraphState.class
 com/tcloud/dto/XMLVisualNode.class
@@ -61,5 +60,6 @@ com/tcloud/dto/GraphState.class
 com/tcloud/dto/XMLGraphStateResult$XMLGraphStateResultBuilder.class
 com/tcloud/entity/WorkResponse$1.class
 com/tcloud/dto/XMLVisualNodeData$XMLVisualNodeDataBuilder.class
+com/tcloud/dto/WorkflowRunConfiguration$WorkflowRunConfigurationBuilder.class
 com/tcloud/dto/XMLTreeNode$XMLTreeNodeBuilder.class
 com/tcloud/dto/XMLVisualEdge$XMLVisualEdgeBuilder.class
