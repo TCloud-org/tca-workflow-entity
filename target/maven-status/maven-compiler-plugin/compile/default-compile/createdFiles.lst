@@ -1,7 +1,6 @@
 com/tcloud/entity/WorkPending$WorkPendingBuilderImpl.class
 com/tcloud/entity/WorkRequest$WorkRequestBuilder.class
 com/tcloud/dto/XMLVisualNode$XMLVisualNodeBuilder.class
-com/tcloud/dto/DisplayRoute$DisplayRouteBuilder.class
 com/tcloud/dto/ServiceConfiguration.class
 com/tcloud/utility/DocumentUtility.class
 com/tcloud/constant/ActionType.class
@@ -12,6 +11,7 @@ com/tcloud/dto/DocumentEntityChangeLog$DocumentEntityChangeLogBuilder.class
 com/tcloud/App.class
 com/tcloud/dto/XMLGraphState$XMLGraphStateBuilder.class
 com/tcloud/entity/StateNotification.class
+com/tcloud/dto/WorkflowConfiguration.class
 com/tcloud/entity/WorkPending.class
 com/tcloud/entity/DocumentState$DocumentStateBuilder.class
 com/tcloud/dto/XMLGraphStateResult.class
@@ -20,6 +20,7 @@ com/tcloud/dto/XMLVisualEdge.class
 com/tcloud/entity/Document.class
 com/tcloud/entity/WorkFailure$WorkFailureBuilder.class
 com/tcloud/entity/WorkResponse$WorkResponseBuilderImpl.class
+com/tcloud/dto/Configuration$ConfigurationBuilder.class
 com/tcloud/entity/StateNotification$StateNotificationBuilder.class
 com/tcloud/dto/Route$RouteBuilder.class
 com/tcloud/dto/XMLVisualization$XMLVisualizationBuilder.class
@@ -27,7 +28,6 @@ com/tcloud/entity/WorkSuccess$1.class
 com/tcloud/dto/XMLVisualNodeData.class
 com/tcloud/dto/ServiceConfiguration$ServiceConfigurationBuilder.class
 com/tcloud/entity/WorkFailure$WorkFailureBuilderImpl.class
-com/tcloud/dto/DisplayRoute.class
 com/tcloud/entity/DocumentBody.class
 com/tcloud/entity/DocumentBody$DocumentBodyBuilder.class
 com/tcloud/dto/Workflow$WorkflowBuilder.class
@@ -36,6 +36,7 @@ com/tcloud/entity/WorkPending$1.class
 com/tcloud/dto/XMLParsedGraphResult.class
 com/tcloud/constant/Environment.class
 com/tcloud/entity/WorkResponse.class
+com/tcloud/dto/Configuration.class
 com/tcloud/entity/WorkFailure.class
 com/tcloud/dto/XMLParsedGraphResult$XMLParsedGraphResultBuilder.class
 com/tcloud/entity/WorkResponse$WorkResponseBuilder.class
@@ -50,6 +51,7 @@ com/tcloud/entity/WorkSuccess$WorkSuccessBuilderImpl.class
 com/tcloud/dto/XMLTreeNode.class
 com/tcloud/entity/WorkflowEvent.class
 com/tcloud/dto/DocumentEntityChangeLog.class
+com/tcloud/dto/WorkflowConfiguration$WorkflowConfigurationBuilder.class
 com/tcloud/entity/DocumentState.class
 com/tcloud/dto/XMLGraphState.class
 com/tcloud/dto/XMLVisualNode.class
