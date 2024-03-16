@@ -8,6 +8,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.extern.jackson.Jacksonized;
 
+import java.time.ZonedDateTime;
+
 @Getter
 @EqualsAndHashCode
 @Builder(toBuilder = true)
@@ -28,4 +30,6 @@ public class ServiceConfiguration {
     private String alias;
 
     private Long version;
+
+    private ZonedDateTime createdAt;
 }
