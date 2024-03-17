@@ -17,4 +17,11 @@ public class RouteMetadata {
     private DocumentEntityChangeLog documentEntityChangeLog;
     private WorkflowRunConfiguration workflowConfiguration;
     private String error;
+
+    public static RouteMetadata create() {
+        return RouteMetadata.builder()
+                .document(Document.create())
+                .documentEntityChangeLog(DocumentEntityChangeLog.create())
+                .build();
+    }
 }
