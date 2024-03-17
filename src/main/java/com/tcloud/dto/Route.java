@@ -35,17 +35,11 @@ public class Route {
 
     private ZonedDateTime createdAt;
 
-    private Document document;
-
-    private String error;
-
     private Long version;
 
     private Integer runningOrder;
 
     private Long executionTime;
-
-    private DocumentEntityChangeLog documentEntityChangeLog;
 
     private String retryScheduleId;
 

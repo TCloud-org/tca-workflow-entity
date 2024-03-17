@@ -16,4 +16,5 @@ public class RouteMetadata {
     private Document document;
     private DocumentEntityChangeLog documentEntityChangeLog;
     private WorkflowRunConfiguration workflowConfiguration;
+    private String error;
 }
