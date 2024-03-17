@@ -7,6 +7,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.extern.jackson.Jacksonized;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Getter
@@ -18,4 +19,12 @@ import java.util.List;
 public class WorkflowRunConfiguration {
     private Configuration workflowConfiguration;
     private List<Configuration> stateConfigurations;
+    private List<Configuration> serviceConfigurations;
+
+    public static WorkflowRunConfiguration create() {
+        return WorkflowRunConfiguration.builder()
+                .stateConfigurations(new ArrayList<>())
+                .serviceConfigurations(new ArrayList<>())
+                .build();
+    }
 }

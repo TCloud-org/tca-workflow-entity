@@ -22,6 +22,7 @@ public class RouteMetadata {
         return RouteMetadata.builder()
                 .document(Document.create())
                 .documentEntityChangeLog(DocumentEntityChangeLog.create())
+                .workflowConfiguration(WorkflowRunConfiguration.create())
                 .build();
     }
 }
