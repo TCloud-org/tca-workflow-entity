@@ -13,6 +13,7 @@ com/tcloud/dto/XMLGraphState$XMLGraphStateBuilder.class
 com/tcloud/entity/StateNotification.class
 com/tcloud/entity/WorkPending.class
 com/tcloud/entity/DocumentState$DocumentStateBuilder.class
+com/tcloud/dto/RouteMetadata.class
 com/tcloud/dto/XMLGraphStateResult.class
 com/tcloud/entity/WorkflowEvent$WorkflowEventBuilder.class
 com/tcloud/dto/XMLVisualEdge.class
@@ -55,6 +56,7 @@ com/tcloud/entity/DocumentState.class
 com/tcloud/dto/XMLGraphState.class
 com/tcloud/dto/XMLVisualNode.class
 com/tcloud/dto/GraphState$GraphStateBuilder.class
+com/tcloud/dto/RouteMetadata$RouteMetadataBuilder.class
 com/tcloud/entity/WorkFailure$1.class
 com/tcloud/dto/GraphState.class
 com/tcloud/dto/XMLGraphStateResult$XMLGraphStateResultBuilder.class

@@ -50,4 +50,6 @@ public class Route {
     private String retryScheduleId;
 
     private ZonedDateTime nextRetryAt;
+
+    private RouteMetadata metadata;
 }
