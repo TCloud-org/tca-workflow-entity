@@ -17,6 +17,8 @@ import java.time.ZonedDateTime;
 public class Route {
     private Long routeId;
 
+    private String clientId;
+
     private Long graphId;
 
     private Long workflowId;
