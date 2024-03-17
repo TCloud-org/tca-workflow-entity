@@ -14,6 +14,6 @@ import lombok.extern.jackson.Jacksonized;
 @AllArgsConstructor
 @Jacksonized
 public class Configuration {
-    private String stateName;
+    private String name;
     private String alias;
 }
