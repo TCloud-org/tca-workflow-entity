@@ -29,4 +29,6 @@
 /Users/tungdinh/CS/tcloud/tca-workflow-entity/src/main/java/com/tcloud/constant/ActionType.java
 /Users/tungdinh/CS/tcloud/tca-workflow-entity/src/main/java/com/tcloud/entity/Document.java
 /Users/tungdinh/CS/tcloud/tca-workflow-entity/src/main/java/com/tcloud/dto/XMLParsedGraphResult.java
+/Users/tungdinh/CS/tcloud/tca-workflow-entity/src/main/java/com/tcloud/entity/RetentionPeriod.java
+/Users/tungdinh/CS/tcloud/tca-workflow-entity/src/main/java/com/tcloud/constant/DateUnit.java
 /Users/tungdinh/CS/tcloud/tca-workflow-entity/src/main/java/com/tcloud/entity/DocumentState.java

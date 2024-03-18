@@ -22,6 +22,8 @@ com/tcloud/entity/WorkFailure$WorkFailureBuilder.class
 com/tcloud/entity/WorkResponse$WorkResponseBuilderImpl.class
 com/tcloud/dto/Configuration$ConfigurationBuilder.class
 com/tcloud/entity/StateNotification$StateNotificationBuilder.class
+com/tcloud/entity/RetentionPeriod.class
+com/tcloud/constant/DateUnit.class
 com/tcloud/dto/Route$RouteBuilder.class
 com/tcloud/dto/XMLVisualization$XMLVisualizationBuilder.class
 com/tcloud/entity/WorkSuccess$1.class
@@ -53,6 +55,7 @@ com/tcloud/dto/XMLTreeNode.class
 com/tcloud/entity/WorkflowEvent.class
 com/tcloud/dto/DocumentEntityChangeLog.class
 com/tcloud/entity/DocumentState.class
+com/tcloud/entity/RetentionPeriod$RetentionPeriodBuilder.class
 com/tcloud/dto/XMLGraphState.class
 com/tcloud/dto/XMLVisualNode.class
 com/tcloud/dto/GraphState$GraphStateBuilder.class
