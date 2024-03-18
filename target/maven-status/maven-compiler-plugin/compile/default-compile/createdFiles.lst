@@ -45,10 +45,12 @@ com/tcloud/entity/WorkResponse$WorkResponseBuilder.class
 com/tcloud/dto/Graph$GraphBuilder.class
 com/tcloud/entity/WorkRequest.class
 com/tcloud/entity/WorkSuccess.class
+com/tcloud/dto/WorkflowMetadata$WorkflowMetadataBuilder.class
 com/tcloud/dto/WorkflowRunConfiguration.class
 com/tcloud/dto/Graph.class
 com/tcloud/constant/WorkflowState.class
 com/tcloud/dto/Workflow.class
+com/tcloud/dto/WorkflowMetadata.class
 com/tcloud/entity/WorkSuccess$WorkSuccessBuilder.class
 com/tcloud/entity/WorkSuccess$WorkSuccessBuilderImpl.class
 com/tcloud/dto/XMLTreeNode.class

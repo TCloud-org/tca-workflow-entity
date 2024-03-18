@@ -1,7 +1,6 @@
 package com.tcloud.dto;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.tcloud.entity.RetentionPeriod;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
@@ -29,5 +28,5 @@ public class Workflow {
     @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSXXX")
     private ZonedDateTime updatedAt;
     private Long nextAvailableVersion;
-    private RetentionPeriod retentionPeriod;
+    private WorkflowMetadata metadata;
 }
