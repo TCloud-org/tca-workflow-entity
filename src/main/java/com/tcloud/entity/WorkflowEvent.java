@@ -2,8 +2,7 @@ package com.tcloud.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.tcloud.dto.Graph;
-import com.tcloud.dto.WorkflowRunConfiguration;
+import com.tcloud.dto.Route;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -21,53 +20,13 @@ import java.util.UUID;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class WorkflowEvent {
 
-    @JsonProperty("clientId")
-    private String clientId;
+    @JsonProperty("eventId")
+    @Builder.Default
+    private String eventId = UUID.randomUUID().toString();
 
-    @JsonProperty("workId")
-    private String workId;
-
-    @JsonProperty("alias")
-    private String alias;
-
-    @JsonProperty("document")
-    private Document document;
-
-    @JsonProperty("source")
-    private String source;
-
-    @JsonProperty("graph")
-    private Graph graph;
+    @JsonProperty("route")
+    private Route route;
 
     @JsonProperty("sentAt")
     private ZonedDateTime sentAt;
-
-    @JsonProperty("version")
-    private Long version;
-
-    @JsonProperty("runningOrder")
-    private Integer runningOrder;
-
-    @JsonProperty("stateNotification")
-    private StateNotification stateNotification;
-
-    @JsonProperty("retryScheduleId")
-    private String retryScheduleId;
-
-    @JsonProperty("nextRetryAt")
-    private ZonedDateTime nextRetryAt;
-
-    @JsonProperty("notifiedAt")
-    private ZonedDateTime notifiedAt;
-
-    @JsonProperty("workflowConfiguration")
-    private WorkflowRunConfiguration workflowConfiguration;
-
-    public String getCompositeKey() {
-        return String.format("%s-%s-%s.%s.%d-%d", clientId, workId, alias, source, runningOrder, version);
-    }
-
-    public String getUniqueKey() {
-        return UUID.randomUUID().toString();
-    }
 }

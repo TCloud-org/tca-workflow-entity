@@ -1,6 +1,5 @@
 package com.tcloud.dto;
 
-import com.tcloud.entity.Document;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -34,6 +33,8 @@ public class Route {
     private String resultType;
 
     private String resultName;
+
+    private String workflowAlias;
 
     private ZonedDateTime createdAt;
 

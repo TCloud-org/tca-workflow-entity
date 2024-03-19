@@ -15,4 +15,11 @@ public class StateNotification {
     private String resultType;
     private String resultName;
     private Document document;
+    private ZonedDateTime notifiedAt;
+
+    public static StateNotification create() {
+        return StateNotification.builder()
+                .document(Document.create())
+                .build();
+    }
 }

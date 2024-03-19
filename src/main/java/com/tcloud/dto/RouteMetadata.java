@@ -1,6 +1,7 @@
 package com.tcloud.dto;
 
 import com.tcloud.entity.Document;
+import com.tcloud.entity.StateNotification;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -17,12 +18,14 @@ public class RouteMetadata {
     private DocumentEntityChangeLog documentEntityChangeLog;
     private WorkflowRunConfiguration workflowConfiguration;
     private String error;
+    private StateNotification notification;
 
     public static RouteMetadata create() {
         return RouteMetadata.builder()
                 .document(Document.create())
                 .documentEntityChangeLog(DocumentEntityChangeLog.create())
                 .workflowConfiguration(WorkflowRunConfiguration.create())
+                .notification(StateNotification.create())
                 .build();
     }
 }
