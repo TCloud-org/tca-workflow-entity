@@ -47,6 +47,7 @@ com/tcloud/entity/WorkRequest.class
 com/tcloud/entity/WorkSuccess.class
 com/tcloud/dto/WorkflowMetadata$WorkflowMetadataBuilder.class
 com/tcloud/dto/WorkflowRunConfiguration.class
+com/tcloud/entity/RetryPolicy.class
 com/tcloud/dto/Graph.class
 com/tcloud/constant/WorkflowState.class
 com/tcloud/dto/Workflow.class
@@ -62,6 +63,7 @@ com/tcloud/dto/XMLGraphState.class
 com/tcloud/dto/XMLVisualNode.class
 com/tcloud/dto/GraphState$GraphStateBuilder.class
 com/tcloud/dto/RouteMetadata$RouteMetadataBuilder.class
+com/tcloud/entity/RetryPolicy$RetryPolicyBuilder.class
 com/tcloud/entity/WorkFailure$1.class
 com/tcloud/dto/GraphState.class
 com/tcloud/dto/XMLGraphStateResult$XMLGraphStateResultBuilder.class
