@@ -1,6 +1,7 @@
 package com.tcloud.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.tcloud.constant.RetryPolicyType;
 import lombok.Builder;
 import lombok.Data;
 import lombok.extern.jackson.Jacksonized;
@@ -13,7 +14,7 @@ public class RetryPolicy {
 
     private long retryId;
 
-    private String policyType;
+    private RetryPolicyType policyType;
 
     private int numberOfRetries;
 
