@@ -18,8 +18,6 @@ public class RetryPolicy {
 
     private String clientId;
 
-    private long workflowId;
-
     private RetryPolicyType policyType;
 
     private int numberOfRetries;
