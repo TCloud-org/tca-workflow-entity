@@ -5,6 +5,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.extern.jackson.Jacksonized;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Data
@@ -14,4 +15,10 @@ import java.util.List;
 public class RetryPolicyMetadata {
 
     private List<Double> retryStimulation;
+
+    public static RetryPolicyMetadata create() {
+        return RetryPolicyMetadata.builder()
+                .retryStimulation(new ArrayList<>())
+                .build();
+    }
 }
