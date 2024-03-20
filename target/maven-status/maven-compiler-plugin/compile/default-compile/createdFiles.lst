@@ -1,5 +1,6 @@
 com/tcloud/entity/WorkPending$WorkPendingBuilderImpl.class
 com/tcloud/entity/WorkRequest$WorkRequestBuilder.class
+com/tcloud/constant/RetryPolicyType.class
 com/tcloud/dto/XMLVisualNode$XMLVisualNodeBuilder.class
 com/tcloud/dto/ServiceConfiguration.class
 com/tcloud/utility/DocumentUtility.class
