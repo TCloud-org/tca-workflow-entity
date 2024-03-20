@@ -12,6 +12,7 @@ com/tcloud/dto/DocumentEntityChangeLog$DocumentEntityChangeLogBuilder.class
 com/tcloud/App.class
 com/tcloud/dto/XMLGraphState$XMLGraphStateBuilder.class
 com/tcloud/entity/StateNotification.class
+com/tcloud/entity/RetryPolicyMetadata.class
 com/tcloud/entity/WorkPending.class
 com/tcloud/entity/GetRetryPolicyByIdOutput.class
 com/tcloud/entity/DocumentState$DocumentStateBuilder.class
@@ -19,6 +20,7 @@ com/tcloud/dto/RouteMetadata.class
 com/tcloud/dto/XMLGraphStateResult.class
 com/tcloud/entity/WorkflowEvent$WorkflowEventBuilder.class
 com/tcloud/dto/XMLVisualEdge.class
+com/tcloud/entity/RetryPolicyMetadata$RetryPolicyMetadataBuilder.class
 com/tcloud/entity/GetRetryPolicyByIdOutput$GetRetryPolicyByIdOutputBuilder.class
 com/tcloud/entity/Document.class
 com/tcloud/entity/WorkFailure$WorkFailureBuilder.class

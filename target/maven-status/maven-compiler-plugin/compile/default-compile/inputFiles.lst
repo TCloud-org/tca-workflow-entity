@@ -30,6 +30,7 @@
 /Users/tungdinh/CS/tcloud/tca-workflow-entity/src/main/java/com/tcloud/dto/DocumentEntityChangeLog.java
 /Users/tungdinh/CS/tcloud/tca-workflow-entity/src/main/java/com/tcloud/dto/Route.java
 /Users/tungdinh/CS/tcloud/tca-workflow-entity/src/main/java/com/tcloud/constant/ActionType.java
+/Users/tungdinh/CS/tcloud/tca-workflow-entity/src/main/java/com/tcloud/entity/RetryPolicyMetadata.java
 /Users/tungdinh/CS/tcloud/tca-workflow-entity/src/main/java/com/tcloud/entity/Document.java
 /Users/tungdinh/CS/tcloud/tca-workflow-entity/src/main/java/com/tcloud/dto/XMLParsedGraphResult.java
 /Users/tungdinh/CS/tcloud/tca-workflow-entity/src/main/java/com/tcloud/entity/RetentionPeriod.java

@@ -49,4 +49,6 @@ public class RetryPolicy {
     private float failureThreshold;
 
     private int retryInterval;
+
+    private RetryPolicyMetadata metadata;
 }
