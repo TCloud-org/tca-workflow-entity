@@ -48,10 +48,12 @@ com/tcloud/entity/WorkFailure.class
 com/tcloud/dto/XMLParsedGraphResult$XMLParsedGraphResultBuilder.class
 com/tcloud/entity/WorkResponse$WorkResponseBuilder.class
 com/tcloud/dto/Graph$GraphBuilder.class
+com/tcloud/dto/RetryConfig$RetryConfigBuilder.class
 com/tcloud/entity/WorkRequest.class
 com/tcloud/entity/WorkSuccess.class
 com/tcloud/dto/WorkflowMetadata$WorkflowMetadataBuilder.class
 com/tcloud/dto/WorkflowRunConfiguration.class
+com/tcloud/dto/RetryConfig.class
 com/tcloud/entity/RetryPolicy.class
 com/tcloud/dto/Graph.class
 com/tcloud/constant/WorkflowState.class

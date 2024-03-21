@@ -8,6 +8,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.extern.jackson.Jacksonized;
 
+import java.util.Map;
+
 @Data
 @Builder(toBuilder = true)
 @NoArgsConstructor
@@ -19,6 +21,8 @@ public class RouteMetadata {
     private WorkflowRunConfiguration workflowConfiguration;
     private String error;
     private StateNotification notification;
+    private RetryConfig workflowRetryConfig;
+    private Map<String, RetryConfig> stateRetryConfigMap;
 
     public static RouteMetadata create() {
         return RouteMetadata.builder()
