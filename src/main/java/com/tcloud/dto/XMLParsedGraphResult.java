@@ -14,4 +14,5 @@ import java.util.Map;
 public class XMLParsedGraphResult {
     private String initialState;
     private Map<String, XMLGraphState> result;
+    private Long retryPolicyId;
 }
