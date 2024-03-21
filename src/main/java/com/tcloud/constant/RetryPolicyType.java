@@ -6,7 +6,7 @@ import lombok.Getter;
 public enum RetryPolicyType {
     FIXED_RETRY("FixedRetry"),
     EXPONENTIAL_BACKOFF("ExponentialBackoff"),
-    RANDOMIZED_EXPONENTIAL_BACKOFF("RandomizedExponentialBackoff"),
+    EXPONENTIAL_BACKOFF_WITH_JITTER("ExponentialBackoffWithJitter"),
     LINEAR_BACKOFF("LinearBackoff"),
     CUSTOM_RETRY("CustomRetry"),
     CIRCUIT_BREAKER("CircuitBreaker");
