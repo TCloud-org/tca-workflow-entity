@@ -14,4 +14,8 @@ import lombok.extern.jackson.Jacksonized;
 public class RetryConfig {
     private long retryPolicyId;
     private int retryIndex;
+
+    public static RetryConfig create() {
+        return RetryConfig.builder().build();
+    }
 }
