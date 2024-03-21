@@ -16,6 +16,8 @@ public class RetryConfig {
     private int retryIndex;
 
     public static RetryConfig create() {
-        return RetryConfig.builder().build();
+        return RetryConfig.builder()
+                .retryIndex(-1)
+                .build();
     }
 }
