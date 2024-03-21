@@ -8,6 +8,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.extern.jackson.Jacksonized;
 
+import java.util.HashMap;
 import java.util.Map;
 
 @Data
@@ -30,6 +31,8 @@ public class RouteMetadata {
                 .documentEntityChangeLog(DocumentEntityChangeLog.create())
                 .workflowConfiguration(WorkflowRunConfiguration.create())
                 .notification(StateNotification.create())
+                .workflowRetryConfig(RetryConfig.create())
+                .stateRetryConfigMap(new HashMap<>())
                 .build();
     }
 }
