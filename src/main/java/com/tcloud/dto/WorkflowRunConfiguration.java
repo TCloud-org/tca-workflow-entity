@@ -5,6 +5,7 @@ import lombok.Builder;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 import lombok.extern.jackson.Jacksonized;
 
 import java.util.ArrayList;
@@ -16,6 +17,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Jacksonized
+@ToString
 public class WorkflowRunConfiguration {
     private Configuration workflowConfiguration;
     private List<Configuration> stateConfigurations;
