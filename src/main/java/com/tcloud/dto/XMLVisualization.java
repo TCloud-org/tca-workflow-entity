@@ -21,7 +21,7 @@ public class XMLVisualization {
     @Builder.Default
     private List<XMLVisualEdge> edges = new ArrayList<>();
 
-    private XMLTreeNode treeNode;
+    private List<XMLTreeNode> treeNodes;
 
     @Builder.Default
     private List<String> treeNodeIds = new ArrayList<>();
