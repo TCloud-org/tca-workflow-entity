@@ -14,8 +14,9 @@ import java.util.List;
 @Jacksonized
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class XMLTreeNode {
-    private String id;
-    private String name;
+    private String key;
+    private String title;
+    private Boolean isLeaf;
 
     @Builder.Default
     private List<XMLTreeNode> children = new ArrayList<>();
