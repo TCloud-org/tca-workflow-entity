@@ -5,7 +5,8 @@ public enum ActionType {
     SUCCESS("success"),
     FAILURE("failure"),
     PENDING("pending"),
-    DEFAULT("default");
+    DEFAULT("default"),
+    TERMINAL("terminal");
 
     private final String value;
 
