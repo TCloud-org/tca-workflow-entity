@@ -43,6 +43,7 @@ com/tcloud/dto/XMLParsedGraphResult.class
 com/tcloud/constant/Environment.class
 com/tcloud/entity/WorkResponse.class
 com/tcloud/dto/Configuration.class
+com/tcloud/entity/WorkflowConfiguration.class
 com/tcloud/entity/WorkFailure.class
 com/tcloud/dto/XMLParsedGraphResult$XMLParsedGraphResultBuilder.class
 com/tcloud/entity/WorkResponse$WorkResponseBuilder.class
@@ -66,6 +67,7 @@ com/tcloud/dto/DocumentEntityChangeLog.class
 com/tcloud/entity/RetentionPeriod$RetentionPeriodBuilder.class
 com/tcloud/dto/XMLGraphState.class
 com/tcloud/dto/XMLVisualNode.class
+com/tcloud/entity/WorkflowConfiguration$WorkflowConfigurationBuilder.class
 com/tcloud/dto/GraphState$GraphStateBuilder.class
 com/tcloud/dto/RouteMetadata$RouteMetadataBuilder.class
 com/tcloud/entity/RetryPolicy$RetryPolicyBuilder.class
