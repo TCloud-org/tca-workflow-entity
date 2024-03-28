@@ -21,7 +21,7 @@ import java.util.Map;
 @AllArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class WorkflowConfiguration {
-    private Long workflowConfigurationId;
+    private String workflowConfigurationId;
 
     private String workId;
 
@@ -42,6 +42,8 @@ public class WorkflowConfiguration {
 
     @Builder.Default
     private ZonedDateTime modifiedAt = ZonedDateTime.now(ZoneId.of("UTC"));
+
+    private Long version;
 
     public static WorkflowConfiguration init() {
         return WorkflowConfiguration.builder()
