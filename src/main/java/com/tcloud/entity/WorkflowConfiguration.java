@@ -9,6 +9,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.extern.jackson.Jacksonized;
 
+import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.util.HashMap;
 import java.util.Map;
@@ -28,21 +29,22 @@ public class WorkflowConfiguration {
 
     private Configuration workflowEndpointConfig;
 
-    private Map<String, Configuration> stateEndpointConfigMap;
+    @Builder.Default
+    private Map<String, Configuration> stateEndpointConfigMap = new HashMap<>();
 
-    private Map<String, Configuration> serviceEndpointConfigMap;
+    @Builder.Default
+    private Map<String, Configuration> serviceEndpointConfigMap = new HashMap<>();
 
     private RetryConfig workflowRetryConfig;
 
-    private Map<String, RetryConfig> stateRetryConfigMap;
+    @Builder.Default
+    private Map<String, RetryConfig> stateRetryConfigMap = new HashMap<>();
 
-    private ZonedDateTime modifiedAt;
+    @Builder.Default
+    private ZonedDateTime modifiedAt = ZonedDateTime.now(ZoneId.of("UTC"));
 
     public static WorkflowConfiguration init() {
         return WorkflowConfiguration.builder()
-                .stateEndpointConfigMap(new HashMap<>())
-                .serviceEndpointConfigMap(new HashMap<>())
-                .stateRetryConfigMap(new HashMap<>())
                 .build();
     }
 }
