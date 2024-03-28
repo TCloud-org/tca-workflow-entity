@@ -28,9 +28,9 @@ public class WorkflowConfiguration {
 
     private Configuration workflowEndpointConfig;
 
-    private List<Configuration> stateEndpointConfigs;
+    private Map<String, Configuration> stateEndpointConfigMap;
 
-    private List<Configuration> serviceEndpointConfigs;
+    private Map<String, Configuration> serviceEndpointConfigMap;
 
     private RetryConfig workflowRetryConfig;
 
