@@ -1,5 +1,8 @@
 package com.tcloud.constant;
 
+import lombok.Getter;
+
+@Getter
 public enum ActionType {
     NOTIFIED("notified"),
     SUCCESS("success"),
@@ -12,10 +15,6 @@ public enum ActionType {
 
     ActionType(String value) {
         this.value = value;
-    }
-
-    public String getValue() {
-        return value;
     }
 
     public static ActionType of(String value) {
