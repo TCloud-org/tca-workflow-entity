@@ -22,7 +22,6 @@ import static com.tcloud.utility.DocumentUtility.getEntityDiff;
 public class Document {
     private String documentId;
     private DocumentBody documentBody;
-    private DocumentState documentState;
 
     @JsonIgnore
     private static ObjectMapper objectMapper;
@@ -33,7 +32,6 @@ public class Document {
             return Document.builder()
                     .documentId(UUID.randomUUID().toString())
                     .documentBody(DocumentBody.create())
-                    .documentState(DocumentState.create())
                     .build();
         });
     }
