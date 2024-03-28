@@ -9,8 +9,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.extern.jackson.Jacksonized;
 
-import java.sql.Timestamp;
-import java.util.List;
+import java.time.ZonedDateTime;
 import java.util.Map;
 
 @Data
@@ -36,5 +35,5 @@ public class WorkflowConfiguration {
 
     private Map<String, RetryConfig> stateRetryConfigMap;
 
-    private Timestamp modifiedAt;
+    private ZonedDateTime modifiedAt;
 }
