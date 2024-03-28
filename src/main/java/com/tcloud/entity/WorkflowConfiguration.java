@@ -10,6 +10,7 @@ import lombok.NoArgsConstructor;
 import lombok.extern.jackson.Jacksonized;
 
 import java.time.ZonedDateTime;
+import java.util.HashMap;
 import java.util.Map;
 
 @Data
@@ -36,4 +37,12 @@ public class WorkflowConfiguration {
     private Map<String, RetryConfig> stateRetryConfigMap;
 
     private ZonedDateTime modifiedAt;
+
+    public static WorkflowConfiguration init() {
+        return WorkflowConfiguration.builder()
+                .stateEndpointConfigMap(new HashMap<>())
+                .serviceEndpointConfigMap(new HashMap<>())
+                .stateRetryConfigMap(new HashMap<>())
+                .build();
+    }
 }
