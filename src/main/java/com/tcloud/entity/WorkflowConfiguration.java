@@ -15,6 +15,7 @@ import java.time.ZonedDateTime;
 import java.util.HashMap;
 import java.util.Map;
 
+import static java.util.Objects.nonNull;
 import static java.util.Objects.requireNonNullElse;
 
 @Data
@@ -58,13 +59,17 @@ public class WorkflowConfiguration {
                 .workflowEndpointConfig(requireNonNullElse(other.getWorkflowEndpointConfig(), this.workflowEndpointConfig))
                 .stateEndpointConfigMap(merge(this.stateEndpointConfigMap, other.getStateEndpointConfigMap()))
                 .serviceEndpointConfigMap(merge(this.serviceEndpointConfigMap, other.getServiceEndpointConfigMap()))
-                .workflowRetryConfig(requireNonNullElse(other.getWorkflowRetryConfig(), this.workflowRetryConfig))
+                .workflowRetryConfig(
+                        nonNull(other.getWorkflowRetryConfig())
+                                ? other.getWorkflowRetryConfig()
+                                : this.workflowRetryConfig
+                )
                 .stateRetryConfigMap(merge(this.stateRetryConfigMap, other.getStateRetryConfigMap()))
                 .modifiedAt(ZonedDateTime.now(ZoneId.of("UTC")))
                 .build();
     }
 
-    private  <T> Map<String, T> merge(@NonNull Map<String, T> m1, @NonNull Map<String, T> m2) {
+    private <T> Map<String, T> merge(@NonNull Map<String, T> m1, @NonNull Map<String, T> m2) {
         final Map<String, T> mergedMap = new HashMap<>(m1);
 
         for (Map.Entry<String, T> entry : m2.entrySet()) {
