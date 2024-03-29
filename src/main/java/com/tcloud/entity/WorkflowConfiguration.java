@@ -56,17 +56,24 @@ public class WorkflowConfiguration {
 
     public WorkflowConfiguration merge(@NonNull final WorkflowConfiguration other) {
         return this.toBuilder()
+                .workflowConfigurationId(nullElse(other.getWorkflowConfigurationId(), this.workflowConfigurationId))
+                .workId(nullElse(other.getWorkId(), this.workId))
+                .clientId(nullElse(other.getClientId(), this.clientId))
                 .workflowEndpointConfig(requireNonNullElse(other.getWorkflowEndpointConfig(), this.workflowEndpointConfig))
                 .stateEndpointConfigMap(merge(this.stateEndpointConfigMap, other.getStateEndpointConfigMap()))
                 .serviceEndpointConfigMap(merge(this.serviceEndpointConfigMap, other.getServiceEndpointConfigMap()))
-                .workflowRetryConfig(
-                        nonNull(other.getWorkflowRetryConfig())
-                                ? other.getWorkflowRetryConfig()
-                                : this.workflowRetryConfig
-                )
+                .workflowRetryConfig(nullElse(other.getWorkflowRetryConfig(), this.workflowRetryConfig))
                 .stateRetryConfigMap(merge(this.stateRetryConfigMap, other.getStateRetryConfigMap()))
                 .modifiedAt(ZonedDateTime.now(ZoneId.of("UTC")))
+                .version(nullElse(other.getVersion(), this.version))
                 .build();
+    }
+
+    private <T> T nullElse(final T o1, final T o2) {
+        if (o1 == null) {
+            return o2;
+        }
+        return o1;
     }
 
     private <T> Map<String, T> merge(final Map<String, T> m1, final Map<String, T> m2) {
