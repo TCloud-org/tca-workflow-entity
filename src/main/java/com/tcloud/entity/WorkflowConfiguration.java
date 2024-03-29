@@ -69,7 +69,15 @@ public class WorkflowConfiguration {
                 .build();
     }
 
-    private <T> Map<String, T> merge(@NonNull Map<String, T> m1, @NonNull Map<String, T> m2) {
+    private <T> Map<String, T> merge(final Map<String, T> m1, final Map<String, T> m2) {
+        if (m1 == null && m2 == null) {
+            return new HashMap<>();
+        } else if (m1 == null) {
+            return new HashMap<>(m2);
+        } else if (m2 == null) {
+            return new HashMap<>(m1);
+        }
+
         final Map<String, T> mergedMap = new HashMap<>(m1);
 
         for (Map.Entry<String, T> entry : m2.entrySet()) {
