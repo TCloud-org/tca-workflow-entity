@@ -32,7 +32,7 @@ public class WorkflowConfiguration {
 
     private String clientId;
 
-    private Configuration workflowEndpointConfig;
+    private Configuration workflowVersionConfig;
 
     @Builder.Default
     private Map<String, Configuration> stateEndpointConfigMap = new HashMap<>();
@@ -63,7 +63,7 @@ public class WorkflowConfiguration {
                 .workflowConfigurationId(nullElse(other.getWorkflowConfigurationId(), this.workflowConfigurationId))
                 .workId(nullElse(other.getWorkId(), this.workId))
                 .clientId(nullElse(other.getClientId(), this.clientId))
-                .workflowEndpointConfig(requireNonNullElse(other.getWorkflowEndpointConfig(), this.workflowEndpointConfig))
+                .workflowVersionConfig(requireNonNullElse(other.getWorkflowVersionConfig(), this.workflowVersionConfig))
                 .stateEndpointConfigMap(merge(this.stateEndpointConfigMap, other.getStateEndpointConfigMap()))
                 .serviceEndpointConfigMap(merge(this.serviceEndpointConfigMap, other.getServiceEndpointConfigMap()))
                 .workflowRetryConfig(nullElse(other.getWorkflowRetryConfig(), this.workflowRetryConfig))
