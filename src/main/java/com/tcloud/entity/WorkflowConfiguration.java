@@ -15,6 +15,7 @@ import java.time.ZonedDateTime;
 import java.util.HashMap;
 import java.util.Map;
 
+import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
 import static java.util.Objects.requireNonNullElse;
 
@@ -54,7 +55,10 @@ public class WorkflowConfiguration {
                 .build();
     }
 
-    public WorkflowConfiguration merge(@NonNull final WorkflowConfiguration other) {
+    public WorkflowConfiguration merge(final WorkflowConfiguration other) {
+        if (isNull(other)) {
+            return this;
+        }
         return this.toBuilder()
                 .workflowConfigurationId(nullElse(other.getWorkflowConfigurationId(), this.workflowConfigurationId))
                 .workId(nullElse(other.getWorkId(), this.workId))
