@@ -19,7 +19,6 @@ import java.util.Map;
 public class RouteMetadata {
     private Document document;
     private DocumentEntityChangeLog documentEntityChangeLog;
-    private WorkflowRunConfiguration workflowConfiguration;
     private String error;
     private StateNotification notification;
     private RetryConfig workflowRetryConfig;
@@ -29,7 +28,6 @@ public class RouteMetadata {
         return RouteMetadata.builder()
                 .document(Document.create())
                 .documentEntityChangeLog(DocumentEntityChangeLog.create())
-                .workflowConfiguration(WorkflowRunConfiguration.create())
                 .notification(StateNotification.create())
                 .workflowRetryConfig(RetryConfig.create())
                 .stateRetryConfigMap(new HashMap<>())
