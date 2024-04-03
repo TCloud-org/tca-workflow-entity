@@ -2,6 +2,7 @@ package com.tcloud.dto;
 
 import com.tcloud.entity.Document;
 import com.tcloud.entity.StateNotification;
+import com.tcloud.entity.WorkRequest;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -19,6 +20,7 @@ import java.util.Map;
 public class RouteMetadata {
     private Document document;
     private DocumentEntityChangeLog documentEntityChangeLog;
+    private WorkRequest workRequest;
     private String error;
     private StateNotification notification;
     private RetryConfig workflowRetryConfig;
