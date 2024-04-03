@@ -16,4 +16,6 @@ import lombok.extern.jackson.Jacksonized;
 public class WorkRequest {
     private String workId;
     private Document document;
+    private String endpoint;
+    private String authorization;
 }
