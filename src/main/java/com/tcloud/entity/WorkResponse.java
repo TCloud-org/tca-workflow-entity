@@ -15,14 +15,13 @@ import lombok.extern.jackson.Jacksonized;
 @AllArgsConstructor
 @SuperBuilder(toBuilder = true)
 @Jacksonized
-@JsonTypeInfo(use = JsonTypeInfo.Id.NAME, include = JsonTypeInfo.As.EXISTING_PROPERTY, property = "type", visible = true)
+@JsonTypeInfo(use = JsonTypeInfo.Id.NAME, include = JsonTypeInfo.As.EXISTING_PROPERTY, visible = true)
 @JsonSubTypes({
         @JsonSubTypes.Type(value = WorkFailure.class, name = "workFailure"),
         @JsonSubTypes.Type(value = WorkPending.class, name = "workPending"),
         @JsonSubTypes.Type(value = WorkSuccess.class, name = "workSuccess")
 })
 public class WorkResponse {
-    private String type;
     private Document document;
     private String actionType;
     private String actionName;
