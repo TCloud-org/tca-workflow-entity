@@ -14,6 +14,7 @@ import lombok.extern.jackson.Jacksonized;
 @NoArgsConstructor
 @SuperBuilder(toBuilder = true)
 @Jacksonized
+@JsonTypeName("workSuccess")
 public class WorkSuccess extends WorkResponse {
 
     @Builder.Default
