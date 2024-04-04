@@ -16,7 +16,6 @@ import java.time.ZonedDateTime;
 @NoArgsConstructor
 @SuperBuilder(toBuilder = true)
 @Jacksonized
-@JsonTypeName("workPending")
 public class WorkPending extends WorkResponse {
 
     private ZonedDateTime releasedAt;
