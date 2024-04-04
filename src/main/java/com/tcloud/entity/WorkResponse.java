@@ -22,6 +22,7 @@ import lombok.extern.jackson.Jacksonized;
         @JsonSubTypes.Type(value = WorkSuccess.class, name = "workSuccess")
 })
 public class WorkResponse {
+    private String type;
     private Document document;
     private String actionType;
     private String actionName;
