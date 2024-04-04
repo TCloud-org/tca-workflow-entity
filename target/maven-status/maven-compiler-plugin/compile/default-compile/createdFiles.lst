@@ -69,7 +69,9 @@ com/tcloud/entity/WorkflowConfiguration$WorkflowConfigurationBuilder.class
 com/tcloud/dto/GraphState$GraphStateBuilder.class
 com/tcloud/dto/RouteMetadata$RouteMetadataBuilder.class
 com/tcloud/entity/RetryPolicy$RetryPolicyBuilder.class
+com/tcloud/dto/HttpResponse$HttpResponseBuilder.class
 com/tcloud/dto/GraphState.class
+com/tcloud/dto/HttpResponse.class
 com/tcloud/dto/XMLGraphStateResult$XMLGraphStateResultBuilder.class
 com/tcloud/dto/XMLVisualNodeData$XMLVisualNodeDataBuilder.class
 com/tcloud/dto/WorkflowRunConfiguration$WorkflowRunConfigurationBuilder.class

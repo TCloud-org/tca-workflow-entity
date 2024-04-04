@@ -25,6 +25,7 @@ public class RouteMetadata {
     private StateNotification notification;
     private RetryConfig workflowRetryConfig;
     private Map<String, RetryConfig> stateRetryConfigMap;
+    private HttpResponse httpResponse;
 
     public static RouteMetadata create() {
         return RouteMetadata.builder()
