@@ -16,31 +16,8 @@ import lombok.extern.jackson.Jacksonized;
 @Jacksonized
 @JsonTypeName("workFailure")
 public class WorkFailure extends WorkResponse {
-    private String type = "workFailure";
     @Builder.Default
     private String actionType = ActionType.FAILURE.getValue();
 
     private Exception exception;
-
-    public WorkFailure(final String actionName) {
-        super(null, ActionType.FAILURE.getValue(), actionName);
-    }
-
-    public WorkFailure(final String actionName,
-                       final Document document) {
-        super(document, ActionType.FAILURE.getValue(), actionName);
-    }
-
-    public WorkFailure(final String actionName,
-                       final Exception exception) {
-        super(null, ActionType.FAILURE.getValue(), actionName);
-        this.exception = exception;
-    }
-
-    public WorkFailure(final String actionName,
-                       final Document document,
-                       final Exception exception) {
-        super(document, ActionType.FAILURE.getValue(), actionName);
-        this.exception = exception;
-    }
 }
