@@ -1,5 +1,6 @@
 package com.tcloud.entity;
 
+import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.tcloud.constant.ActionType;
 import lombok.Builder;
 import lombok.EqualsAndHashCode;
@@ -16,6 +17,7 @@ import java.time.ZonedDateTime;
 @NoArgsConstructor
 @SuperBuilder(toBuilder = true)
 @Jacksonized
+@JsonTypeName("workPending")
 public class WorkPending extends WorkResponse {
 
     private ZonedDateTime releasedAt;

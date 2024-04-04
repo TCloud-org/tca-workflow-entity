@@ -1,11 +1,11 @@
 package com.tcloud.entity;
 
+import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.tcloud.constant.ActionType;
 import lombok.Builder;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.NonNull;
 import lombok.experimental.SuperBuilder;
 import lombok.extern.jackson.Jacksonized;
 
@@ -14,6 +14,7 @@ import lombok.extern.jackson.Jacksonized;
 @NoArgsConstructor
 @SuperBuilder(toBuilder = true)
 @Jacksonized
+@JsonTypeName("workFailure")
 public class WorkFailure extends WorkResponse {
     @Builder.Default
     private String actionType = ActionType.FAILURE.getValue();
