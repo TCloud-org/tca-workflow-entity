@@ -16,6 +16,7 @@ import lombok.extern.jackson.Jacksonized;
 @Jacksonized
 @JsonTypeName("workFailure")
 public class WorkFailure extends WorkResponse {
+    private String type = "workFailure";
     @Builder.Default
     private String actionType = ActionType.FAILURE.getValue();
 
