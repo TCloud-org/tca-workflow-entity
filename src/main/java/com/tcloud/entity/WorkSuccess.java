@@ -14,9 +14,17 @@ import lombok.extern.jackson.Jacksonized;
 @NoArgsConstructor
 @SuperBuilder(toBuilder = true)
 @Jacksonized
-@JsonTypeName("workSuccess")
 public class WorkSuccess extends WorkResponse {
 
     @Builder.Default
     private String actionType = ActionType.SUCCESS.getValue();
+
+    public WorkSuccess(final String actionName) {
+        super(null, ActionType.SUCCESS.getValue(), actionName);
+    }
+
+    public WorkSuccess(final String actionName,
+                       final Document document) {
+        super(document, ActionType.SUCCESS.getValue(), actionName);
+    }
 }
