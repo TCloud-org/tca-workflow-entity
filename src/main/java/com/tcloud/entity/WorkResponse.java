@@ -15,7 +15,7 @@ import lombok.extern.jackson.Jacksonized;
 @AllArgsConstructor
 @SuperBuilder(toBuilder = true)
 @Jacksonized
-@JsonTypeInfo(use = JsonTypeInfo.Id.NAME, visible = true)
+@JsonTypeInfo(use = JsonTypeInfo.Id.NAME, property = "type")
 @JsonSubTypes({
         @JsonSubTypes.Type(value = WorkFailure.class, name = "workFailure"),
         @JsonSubTypes.Type(value = WorkPending.class, name = "workPending"),
