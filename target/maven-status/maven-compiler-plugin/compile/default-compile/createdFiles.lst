@@ -14,6 +14,7 @@ com/tcloud/dto/XMLGraphState$XMLGraphStateBuilder.class
 com/tcloud/entity/StateNotification.class
 com/tcloud/entity/RetryPolicyMetadata.class
 com/tcloud/entity/WorkPending.class
+com/tcloud/dto/Work.class
 com/tcloud/entity/GetRetryPolicyByIdOutput.class
 com/tcloud/dto/RouteMetadata.class
 com/tcloud/dto/XMLGraphStateResult.class
@@ -45,6 +46,7 @@ com/tcloud/entity/WorkflowConfiguration.class
 com/tcloud/entity/WorkFailure.class
 com/tcloud/dto/XMLParsedGraphResult$XMLParsedGraphResultBuilder.class
 com/tcloud/entity/WorkResponse$WorkResponseBuilder.class
+com/tcloud/dto/Work$WorkBuilder.class
 com/tcloud/dto/Graph$GraphBuilder.class
 com/tcloud/dto/RetryConfig$RetryConfigBuilder.class
 com/tcloud/entity/WorkRequest.class
