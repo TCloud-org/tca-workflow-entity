@@ -48,6 +48,7 @@ com/tcloud/dto/XMLParsedGraphResult$XMLParsedGraphResultBuilder.class
 com/tcloud/entity/WorkResponse$WorkResponseBuilder.class
 com/tcloud/dto/Work$WorkBuilder.class
 com/tcloud/dto/Graph$GraphBuilder.class
+com/tcloud/dto/WorkStatistic.class
 com/tcloud/dto/RetryConfig$RetryConfigBuilder.class
 com/tcloud/entity/WorkRequest.class
 com/tcloud/entity/WorkSuccess.class
@@ -64,6 +65,7 @@ com/tcloud/entity/WorkSuccess$WorkSuccessBuilderImpl.class
 com/tcloud/dto/XMLTreeNode.class
 com/tcloud/entity/WorkflowEvent.class
 com/tcloud/dto/DocumentEntityChangeLog.class
+com/tcloud/dto/WorkStatistic$WorkStatisticBuilder.class
 com/tcloud/entity/RetentionPeriod$RetentionPeriodBuilder.class
 com/tcloud/dto/XMLGraphState.class
 com/tcloud/dto/XMLVisualNode.class
