@@ -52,6 +52,7 @@ com/tcloud/dto/WorkStatistic.class
 com/tcloud/dto/RetryConfig$RetryConfigBuilder.class
 com/tcloud/entity/WorkRequest.class
 com/tcloud/entity/WorkSuccess.class
+com/tcloud/constant/Period.class
 com/tcloud/dto/WorkflowMetadata$WorkflowMetadataBuilder.class
 com/tcloud/dto/WorkflowRunConfiguration.class
 com/tcloud/dto/RetryConfig.class
