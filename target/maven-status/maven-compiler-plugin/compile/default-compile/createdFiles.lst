@@ -26,6 +26,7 @@ com/tcloud/entity/Document.class
 com/tcloud/entity/WorkFailure$WorkFailureBuilder.class
 com/tcloud/entity/WorkResponse$WorkResponseBuilderImpl.class
 com/tcloud/dto/Configuration$ConfigurationBuilder.class
+com/tcloud/entity/Clause$ClauseBuilder.class
 com/tcloud/entity/StateNotification$StateNotificationBuilder.class
 com/tcloud/entity/RetentionPeriod.class
 com/tcloud/constant/DateUnit.class
@@ -74,6 +75,7 @@ com/tcloud/entity/WorkflowConfiguration$WorkflowConfigurationBuilder.class
 com/tcloud/dto/GraphState$GraphStateBuilder.class
 com/tcloud/dto/RouteMetadata$RouteMetadataBuilder.class
 com/tcloud/entity/RetryPolicy$RetryPolicyBuilder.class
+com/tcloud/entity/Clause.class
 com/tcloud/dto/HttpResponse$HttpResponseBuilder.class
 com/tcloud/dto/GraphState.class
 com/tcloud/dto/HttpResponse.class
