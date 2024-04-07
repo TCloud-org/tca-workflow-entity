@@ -60,6 +60,7 @@ com/tcloud/dto/RetryConfig.class
 com/tcloud/entity/RetryPolicy.class
 com/tcloud/dto/Graph.class
 com/tcloud/constant/WorkflowState.class
+com/tcloud/constant/ClauseConditionType.class
 com/tcloud/dto/Workflow.class
 com/tcloud/dto/WorkflowMetadata.class
 com/tcloud/entity/WorkSuccess$WorkSuccessBuilder.class
