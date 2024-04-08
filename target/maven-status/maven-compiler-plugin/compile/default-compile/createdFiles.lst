@@ -6,6 +6,7 @@ com/tcloud/dto/ServiceConfiguration.class
 com/tcloud/utility/DocumentUtility.class
 com/tcloud/constant/ActionType.class
 com/tcloud/entity/Document$DocumentBuilder.class
+com/tcloud/entity/DateRange.class
 com/tcloud/entity/WorkPending$WorkPendingBuilder.class
 com/tcloud/dto/XMLVisualization.class
 com/tcloud/dto/DocumentEntityChangeLog$DocumentEntityChangeLogBuilder.class
@@ -35,6 +36,7 @@ com/tcloud/dto/XMLVisualization$XMLVisualizationBuilder.class
 com/tcloud/dto/XMLVisualNodeData.class
 com/tcloud/dto/ServiceConfiguration$ServiceConfigurationBuilder.class
 com/tcloud/entity/WorkFailure$WorkFailureBuilderImpl.class
+com/tcloud/entity/DateRange$DateRangeBuilder.class
 com/tcloud/entity/DocumentBody.class
 com/tcloud/entity/DocumentBody$DocumentBodyBuilder.class
 com/tcloud/dto/Workflow$WorkflowBuilder.class
