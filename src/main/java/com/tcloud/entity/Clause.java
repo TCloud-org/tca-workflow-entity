@@ -16,6 +16,6 @@ public class Clause {
     private String operator;
     private String condition;
     private Map<String, Boolean> checkbox;
-    private String input;
+    private Object input;
     private DateRange date;
 }
