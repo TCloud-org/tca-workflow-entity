@@ -7,7 +7,9 @@ import lombok.Getter;
 @AllArgsConstructor
 public enum ClauseConditionType {
     IN("IN"),
-    NOT_IN("NOT IN");
+    NOT_IN("NOT IN"),
+    IS_NULL("IS NULL"),
+    IS_NOT_NULL("IS NOT NULL");
 
     private final String value;
 
