@@ -15,5 +15,5 @@ public class HttpResponse {
     private int statusCode;
     private String status;
     private String reasonPhrase;
-    private long latency;
+    private Long latency;
 }
