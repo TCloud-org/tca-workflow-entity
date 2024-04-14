@@ -24,6 +24,8 @@ com/tcloud/dto/XMLVisualNodeData.class
 com/tcloud/dto/ServiceConfiguration$ServiceConfigurationBuilder.class
 com/tcloud/entity/DateRange$DateRangeBuilder.class
 com/tcloud/entity/DocumentBody.class
+com/tcloud/dto/EventWorkflow$EventWorkflowBuilder.class
+com/tcloud/dto/EventWorkflowMetadata.class
 com/tcloud/constant/Environment.class
 com/tcloud/entity/WorkResponse.class
 com/tcloud/dto/Configuration.class
@@ -56,6 +58,7 @@ com/tcloud/entity/EventWorkflowStep.class
 com/tcloud/utility/DocumentUtility.class
 com/tcloud/entity/WorkPending$WorkPendingBuilder.class
 com/tcloud/dto/DocumentEntityChangeLog$DocumentEntityChangeLogBuilder.class
+com/tcloud/dto/EventWorkflowMetadata$EventWorkflowMetadataBuilder.class
 com/tcloud/entity/RetryPolicyMetadata.class
 com/tcloud/entity/WorkPending.class
 com/tcloud/entity/GetRetryPolicyByIdOutput.class
@@ -86,6 +89,7 @@ com/tcloud/entity/RetryPolicy.class
 com/tcloud/constant/WorkflowState.class
 com/tcloud/constant/ClauseConditionType.class
 com/tcloud/entity/WorkSuccess$WorkSuccessBuilder.class
+com/tcloud/dto/EventWorkflow.class
 com/tcloud/entity/WorkSuccess$WorkSuccessBuilderImpl.class
 com/tcloud/entity/WorkflowEvent.class
 com/tcloud/dto/WorkStatistic$WorkStatisticBuilder.class
