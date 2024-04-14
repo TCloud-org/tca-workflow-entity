@@ -3,18 +3,18 @@ package com.tcloud.constant;
 import lombok.Getter;
 
 @Getter
-public enum EmailStepType {
+public enum EventWorkflowStepType {
     EMAIL("email"),
     DELAY("delay");
 
     private final String value;
 
-    EmailStepType(String value) {
+    EventWorkflowStepType(String value) {
         this.value = value;
     }
 
-    public static EmailStepType of(String value) {
-        for (EmailStepType state : EmailStepType.values()) {
+    public static EventWorkflowStepType of(String value) {
+        for (EventWorkflowStepType state : EventWorkflowStepType.values()) {
             if (state.value.equalsIgnoreCase(value)) {
                 return state;
             }

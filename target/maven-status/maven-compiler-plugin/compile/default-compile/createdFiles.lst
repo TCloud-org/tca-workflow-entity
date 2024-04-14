@@ -55,7 +55,6 @@ com/tcloud/dto/XMLTreeNode$XMLTreeNodeBuilder.class
 com/tcloud/dto/XMLVisualEdge$XMLVisualEdgeBuilder.class
 com/tcloud/entity/WorkPending$WorkPendingBuilderImpl.class
 com/tcloud/entity/EventWorkflowStep.class
-com/tcloud/constant/EmailStepType.class
 com/tcloud/utility/DocumentUtility.class
 com/tcloud/entity/WorkPending$WorkPendingBuilder.class
 com/tcloud/dto/DocumentEntityChangeLog$DocumentEntityChangeLogBuilder.class
@@ -76,6 +75,7 @@ com/tcloud/entity/WorkFailure$WorkFailureBuilderImpl.class
 com/tcloud/entity/DocumentBody$DocumentBodyBuilder.class
 com/tcloud/dto/Workflow$WorkflowBuilder.class
 com/tcloud/dto/Route.class
+com/tcloud/constant/EventWorkflowStepType.class
 com/tcloud/dto/XMLParsedGraphResult.class
 com/tcloud/entity/WorkFailure.class
 com/tcloud/entity/WorkResponse$WorkResponseBuilder.class

@@ -1,6 +1,7 @@
 package com.tcloud.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.tcloud.constant.EventWorkflowStepType;
 import lombok.Builder;
 import lombok.Data;
 import lombok.extern.jackson.Jacksonized;
@@ -10,7 +11,7 @@ import lombok.extern.jackson.Jacksonized;
 @Jacksonized
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class EventWorkflowStep {
-    private String type;
+    private EventWorkflowStepType type;
     private Delay delay;
     private EmailTemplate email;
 }
