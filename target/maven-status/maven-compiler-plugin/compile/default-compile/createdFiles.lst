@@ -53,6 +53,7 @@ com/tcloud/dto/XMLVisualNodeData$XMLVisualNodeDataBuilder.class
 com/tcloud/dto/WorkflowRunConfiguration$WorkflowRunConfigurationBuilder.class
 com/tcloud/dto/XMLTreeNode$XMLTreeNodeBuilder.class
 com/tcloud/dto/XMLVisualEdge$XMLVisualEdgeBuilder.class
+com/tcloud/entity/Descendant.class
 com/tcloud/entity/WorkPending$WorkPendingBuilderImpl.class
 com/tcloud/entity/EventWorkflowStep.class
 com/tcloud/utility/DocumentUtility.class
@@ -81,6 +82,7 @@ com/tcloud/entity/WorkFailure.class
 com/tcloud/entity/WorkResponse$WorkResponseBuilder.class
 com/tcloud/dto/Work$WorkBuilder.class
 com/tcloud/dto/WorkStatistic.class
+com/tcloud/entity/Descendant$DescendantBuilder.class
 com/tcloud/entity/CustomTime$CustomTimeBuilder.class
 com/tcloud/dto/RetryConfig$RetryConfigBuilder.class
 com/tcloud/entity/Delay.class
