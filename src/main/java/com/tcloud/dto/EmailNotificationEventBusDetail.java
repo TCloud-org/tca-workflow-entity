@@ -8,6 +8,9 @@ import lombok.ToString;
 import lombok.experimental.SuperBuilder;
 import lombok.extern.jackson.Jacksonized;
 
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
+
 @Getter
 @EqualsAndHashCode(callSuper = true)
 @NoArgsConstructor
@@ -19,17 +22,9 @@ public class EmailNotificationEventBusDetail extends WorkflowEventBusDetail {
     private Long workflowId;
     private int stepIndex;
 
-    public EmailNotificationEventBusDetail(final String eventId,
-                                           final Long workflowId,
-                                           final Integer stepIndex) {
-        super(WorkflowEventBusService.EMAIL_NOTIFICATION);
-        this.eventId = eventId;
-        this.workflowId = workflowId;
-        this.stepIndex = stepIndex;
-    }
-
     public static EmailNotificationEventBusDetailBuilder<?, ?> create() {
         return EmailNotificationEventBusDetail.builder()
-                .service(WorkflowEventBusService.EMAIL_NOTIFICATION);
+                .service(WorkflowEventBusService.EMAIL_NOTIFICATION)
+                .sentAt(ZonedDateTime.now(ZoneId.of("UTC")));
     }
 }

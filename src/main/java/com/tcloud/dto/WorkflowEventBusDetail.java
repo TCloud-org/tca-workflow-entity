@@ -10,6 +10,8 @@ import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
 import lombok.extern.jackson.Jacksonized;
 
+import java.time.ZonedDateTime;
+
 @Getter
 @EqualsAndHashCode
 @NoArgsConstructor
@@ -22,4 +24,5 @@ import lombok.extern.jackson.Jacksonized;
 })
 public class WorkflowEventBusDetail {
     private WorkflowEventBusService service;
+    private ZonedDateTime sentAt;
 }
