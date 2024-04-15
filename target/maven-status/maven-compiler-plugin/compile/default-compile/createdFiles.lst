@@ -46,6 +46,7 @@ com/tcloud/dto/Workflow.class
 com/tcloud/dto/WorkflowMetadata.class
 com/tcloud/dto/XMLTreeNode.class
 com/tcloud/dto/DocumentEntityChangeLog.class
+com/tcloud/dto/ApiWorkResult.class
 com/tcloud/entity/RetentionPeriod$RetentionPeriodBuilder.class
 com/tcloud/dto/XMLVisualNode.class
 com/tcloud/dto/GraphState$GraphStateBuilder.class
@@ -84,6 +85,7 @@ com/tcloud/entity/WorkFailure$WorkFailureBuilderImpl.class
 com/tcloud/entity/DocumentBody$DocumentBodyBuilder.class
 com/tcloud/entity/EmailForm.class
 com/tcloud/dto/Workflow$WorkflowBuilder.class
+com/tcloud/dto/ApiWorkResult$ApiWorkResultBuilder.class
 com/tcloud/dto/Route.class
 com/tcloud/entity/TriggerForm.class
 com/tcloud/dto/ApiWorkflowState.class
