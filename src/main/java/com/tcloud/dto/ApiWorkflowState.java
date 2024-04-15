@@ -17,6 +17,7 @@ import java.time.ZonedDateTime;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class ApiWorkflowState {
     private Long stateId;
+    private Long graphId;
     private String stateType;
     private String source;
     private String service;
