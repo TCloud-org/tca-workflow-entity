@@ -55,6 +55,7 @@ com/tcloud/entity/TriggerForm$TriggerFormBuilderImpl.class
 com/tcloud/dto/GraphState.class
 com/tcloud/dto/HttpResponse.class
 com/tcloud/dto/XMLGraphStateResult$XMLGraphStateResultBuilder.class
+com/tcloud/dto/WorkflowEventBusDetail.class
 com/tcloud/dto/XMLVisualNodeData$XMLVisualNodeDataBuilder.class
 com/tcloud/dto/WorkflowRunConfiguration$WorkflowRunConfigurationBuilder.class
 com/tcloud/dto/XMLTreeNode$XMLTreeNodeBuilder.class
@@ -81,6 +82,7 @@ com/tcloud/dto/Configuration$ConfigurationBuilder.class
 com/tcloud/entity/Clause$ClauseBuilder.class
 com/tcloud/entity/StateNotification$StateNotificationBuilder.class
 com/tcloud/entity/RetentionPeriod.class
+com/tcloud/dto/WorkflowEventBusDetail$WorkflowEventBusDetailBuilder.class
 com/tcloud/entity/WorkFailure$WorkFailureBuilderImpl.class
 com/tcloud/entity/DocumentBody$DocumentBodyBuilder.class
 com/tcloud/entity/EmailForm.class
@@ -91,6 +93,7 @@ com/tcloud/entity/TriggerForm.class
 com/tcloud/dto/ApiWorkflowState.class
 com/tcloud/constant/EventWorkflowStepType.class
 com/tcloud/dto/XMLParsedGraphResult.class
+com/tcloud/constant/WorkflowEventBusService.class
 com/tcloud/entity/WorkFailure.class
 com/tcloud/entity/WorkResponse$WorkResponseBuilder.class
 com/tcloud/dto/Work$WorkBuilder.class
