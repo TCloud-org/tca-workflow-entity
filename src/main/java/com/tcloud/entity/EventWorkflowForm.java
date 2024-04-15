@@ -24,4 +24,5 @@ import lombok.extern.jackson.Jacksonized;
 })
 @ToString
 public class EventWorkflowForm {
+    private String id;
 }
