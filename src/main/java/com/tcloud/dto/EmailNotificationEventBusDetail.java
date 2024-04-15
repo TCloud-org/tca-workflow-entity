@@ -28,7 +28,7 @@ public class EmailNotificationEventBusDetail extends WorkflowEventBusDetail {
         this.stepIndex = stepIndex;
     }
 
-    public EmailNotificationEventBusDetailBuilder<?, ?> create() {
+    public static EmailNotificationEventBusDetailBuilder<?, ?> create() {
         return EmailNotificationEventBusDetail.builder()
                 .service(WorkflowEventBusService.EMAIL_NOTIFICATION);
     }
