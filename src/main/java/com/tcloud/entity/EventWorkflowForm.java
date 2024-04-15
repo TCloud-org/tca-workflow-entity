@@ -18,9 +18,9 @@ import lombok.extern.jackson.Jacksonized;
 @Jacksonized
 @JsonTypeInfo(use = JsonTypeInfo.Id.NAME, property = "type")
 @JsonSubTypes({
-        @JsonSubTypes.Type(value = TriggerForm.class, name = "triggerForm"),
-        @JsonSubTypes.Type(value = EmailForm.class, name = "emailForm"),
-        @JsonSubTypes.Type(value = DelayForm.class, name = "delayForm")
+        @JsonSubTypes.Type(value = TriggerForm.class, name = "trigger"),
+        @JsonSubTypes.Type(value = EmailForm.class, name = "email"),
+        @JsonSubTypes.Type(value = DelayForm.class, name = "delay")
 })
 @ToString
 public class EventWorkflowForm {
