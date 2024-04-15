@@ -70,6 +70,7 @@ com/tcloud/entity/RetryPolicyMetadata.class
 com/tcloud/entity/WorkPending.class
 com/tcloud/entity/GetRetryPolicyByIdOutput.class
 com/tcloud/dto/XMLGraphStateResult.class
+com/tcloud/dto/ApiWorkflowState$ApiWorkflowStateBuilder.class
 com/tcloud/dto/XMLVisualEdge.class
 com/tcloud/entity/RetryPolicyMetadata$RetryPolicyMetadataBuilder.class
 com/tcloud/entity/Document.class
@@ -85,6 +86,7 @@ com/tcloud/entity/EmailForm.class
 com/tcloud/dto/Workflow$WorkflowBuilder.class
 com/tcloud/dto/Route.class
 com/tcloud/entity/TriggerForm.class
+com/tcloud/dto/ApiWorkflowState.class
 com/tcloud/constant/EventWorkflowStepType.class
 com/tcloud/dto/XMLParsedGraphResult.class
 com/tcloud/entity/WorkFailure.class
