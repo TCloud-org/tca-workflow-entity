@@ -7,6 +7,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.extern.jackson.Jacksonized;
 
+import java.time.ZonedDateTime;
+
 @Data
 @Builder(toBuilder = true)
 @NoArgsConstructor
@@ -26,4 +28,5 @@ public class ApiWorkflowState {
     private String workResultType;
     private String workResultName;
     private String workResultTarget;
+    private ZonedDateTime createdAt;
 }
