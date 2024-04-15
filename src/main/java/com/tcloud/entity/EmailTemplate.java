@@ -18,5 +18,5 @@ public class EmailTemplate {
     private List<String> cc;
     private List<String> bcc;
     private String subject;
-    private String message;
+    private List<Descendant> message;
 }
