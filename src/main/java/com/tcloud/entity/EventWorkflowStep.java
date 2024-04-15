@@ -12,6 +12,5 @@ import lombok.extern.jackson.Jacksonized;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class EventWorkflowStep {
     private EventWorkflowStepType type;
-    private Delay delay;
-    private EmailTemplate email;
+    private EventWorkflowForm form;
 }
