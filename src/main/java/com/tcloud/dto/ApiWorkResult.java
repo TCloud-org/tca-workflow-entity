@@ -22,4 +22,5 @@ public class ApiWorkResult {
     private String workResultName;
     private String workResultTarget;
     private ZonedDateTime createdAt;
+    private ApiWorkflowState state;
 }
