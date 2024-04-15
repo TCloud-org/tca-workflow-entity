@@ -25,4 +25,5 @@ import java.time.ZonedDateTime;
 public class WorkflowEventBusDetail {
     private WorkflowEventBusService service;
     private ZonedDateTime sentAt;
+    private String clientId;
 }
