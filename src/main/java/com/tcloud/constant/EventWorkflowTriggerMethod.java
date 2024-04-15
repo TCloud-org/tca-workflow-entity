@@ -6,7 +6,7 @@ import lombok.Getter;
 @Getter
 @AllArgsConstructor
 public enum EventWorkflowTriggerMethod {
-    CODE("code"),
+    API("api"),
     WEBHOOK("webhook");
 
     private final String value;
