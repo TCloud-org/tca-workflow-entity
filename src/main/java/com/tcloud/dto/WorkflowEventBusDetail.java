@@ -7,6 +7,7 @@ import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 import lombok.experimental.SuperBuilder;
 import lombok.extern.jackson.Jacksonized;
 
@@ -22,6 +23,7 @@ import java.time.ZonedDateTime;
 @JsonSubTypes({
         @JsonSubTypes.Type(value = EmailNotificationEventBusDetail.class, name = "emailNotificationEventBusDetail"),
 })
+@ToString
 public class WorkflowEventBusDetail {
     private WorkflowEventBusService service;
     private ZonedDateTime sentAt;
