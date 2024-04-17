@@ -97,7 +97,6 @@ com/tcloud/dto/Route.class
 com/tcloud/entity/TriggerForm.class
 com/tcloud/dto/ApiWorkflowState.class
 com/tcloud/constant/EventWorkflowStepType.class
-com/tcloud/entity/Descendant$1.class
 com/tcloud/dto/XMLParsedGraphResult.class
 com/tcloud/constant/WorkflowEventBusService.class
 com/tcloud/entity/WorkFailure.class

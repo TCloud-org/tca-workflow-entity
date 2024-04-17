@@ -2,7 +2,6 @@ package com.tcloud.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.tcloud.Translator.HTMLTranslator;
-import com.tcloud.constant.ElementType;
 import lombok.Builder;
 import lombok.Data;
 import lombok.extern.jackson.Jacksonized;
@@ -14,7 +13,7 @@ import java.util.List;
 @Jacksonized
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Descendant {
-    private ElementType type;
+    private String type;
     private List<Descendant> children;
     private String language;
     private String url;
@@ -33,34 +32,34 @@ public class Descendant {
 
     public String getTextContentTag() {
         switch (type) {
-            case BLOCK_QUOTE -> {
+            case "block-quote" -> {
                 return "blockquote";
             }
-            case BULLETED_LIST -> {
+            case "bulleted-list" -> {
                 return "ul";
             }
-            case HEADING_ONE -> {
+            case "heading-one" -> {
                 return "h1";
             }
-            case HEADING_TWO -> {
+            case "heading-two" -> {
                 return "h2";
             }
-            case HEADING_THREE -> {
+            case "heading-three" -> {
                 return "h3";
             }
-            case HEADING_FOUR -> {
+            case "heading-four" -> {
                 return "h4";
             }
-            case HEADING_FIVE -> {
+            case "heading-five" -> {
                 return "h5";
             }
-            case HEADING_SIX -> {
+            case "heading-six" -> {
                 return "h6";
             }
-            case LIST_ITEM -> {
+            case "list-item" -> {
                 return "li";
             }
-            case NUMBERED_LIST -> {
+            case "numbered-list" -> {
                 return "ol";
             }
             default -> {
