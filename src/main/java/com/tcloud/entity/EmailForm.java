@@ -39,7 +39,7 @@ public class EmailForm extends EventWorkflowForm {
     private List<Descendant> message = new ArrayList<>();
 
     @JsonIgnore
-    public String toHtmlMessage() {
+    public String getHtmlMessage() {
         return message.stream().map(Descendant::getHtml)
                 .collect(Collectors.joining("\n"));
     }
