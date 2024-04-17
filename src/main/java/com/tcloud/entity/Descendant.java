@@ -31,6 +31,10 @@ public class Descendant {
     }
 
     public String getTextContentTag() {
+        if (type == null) {
+            return "";
+        }
+
         switch (type) {
             case "block-quote" -> {
                 return "blockquote";
