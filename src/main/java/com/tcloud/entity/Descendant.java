@@ -28,7 +28,7 @@ public class Descendant {
     private String align;
 
     public String getHtml() {
-        HTMLTranslator.from(this);
+        return HTMLTranslator.from(this);
     }
 
     public String getTextContentTag() {
