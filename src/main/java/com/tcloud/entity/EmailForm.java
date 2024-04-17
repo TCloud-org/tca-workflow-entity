@@ -1,5 +1,6 @@
 package com.tcloud.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Builder;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -37,7 +38,8 @@ public class EmailForm extends EventWorkflowForm {
     @Builder.Default
     private List<Descendant> message = new ArrayList<>();
 
-    public String getHtmlMessage() {
+    @JsonIgnore
+    public String toHtmlMessage() {
         return message.stream().map(Descendant::getHtml)
                 .collect(Collectors.joining("\n"));
     }

@@ -12,7 +12,7 @@ public final class HTMLTranslator {
     }
 
     public static String from(@NonNull final Descendant descendant) {
-        final String textContentTag = descendant.getTextContentTag();
+        final String textContentTag = descendant.toTextContentTag();
         final String textSemanticTag = descendant.getTextSemanticTag();
         final String text = descendant.getText();
 
