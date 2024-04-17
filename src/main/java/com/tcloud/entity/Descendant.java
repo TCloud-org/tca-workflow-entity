@@ -32,7 +32,7 @@ public class Descendant {
 
     public String getTextContentTag() {
         if (type == null) {
-            return "";
+            return "p";
         }
 
         switch (type) {

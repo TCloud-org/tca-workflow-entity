@@ -3,6 +3,7 @@ package com.tcloud.Translator;
 import com.tcloud.entity.Descendant;
 import lombok.NonNull;
 
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 public final class HTMLTranslator {
@@ -15,9 +16,10 @@ public final class HTMLTranslator {
         final String textSemanticTag = descendant.getTextSemanticTag();
         final String text = descendant.getText();
 
-        final String childrenContent = descendant.getChildren().stream()
-                .map(HTMLTranslator::from)
-                .collect(Collectors.joining("\n"));
+        final String childrenContent = Optional.ofNullable(descendant.getChildren()).map(items -> items.stream()
+                        .map(HTMLTranslator::from)
+                        .collect(Collectors.joining("\n")))
+                .orElse("");
 
         final String children = text + "\n" + childrenContent;
 
