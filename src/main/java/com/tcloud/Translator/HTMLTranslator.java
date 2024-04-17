@@ -21,13 +21,13 @@ public final class HTMLTranslator {
                         .collect(Collectors.joining("\n")))
                 .orElse("");
 
-        final String children = text + "\n" + childrenContent;
+        final String children = text != null ? text + "\n" + childrenContent : childrenContent;
 
         return wrapWithTags(textContentTag, wrapWithTags(textSemanticTag, children));
     }
 
-    private static String wrapWithTags(String tags,
+    private static String wrapWithTags(String tag,
                                        String children) {
-        return "<" + tags + ">" + children + "</" + tags + ">";
+        return "<" + tag + ">" + children + "</" + tag + ">";
     }
 }
