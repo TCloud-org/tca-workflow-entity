@@ -10,6 +10,7 @@ import lombok.extern.jackson.Jacksonized;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Getter
 @EqualsAndHashCode(callSuper = true)
@@ -35,4 +36,9 @@ public class EmailForm extends EventWorkflowForm {
 
     @Builder.Default
     private List<Descendant> message = new ArrayList<>();
+
+    public String getHtmlMessage() {
+        return message.stream().map(Descendant::getHtml)
+                .collect(Collectors.joining("\n"));
+    }
 }
