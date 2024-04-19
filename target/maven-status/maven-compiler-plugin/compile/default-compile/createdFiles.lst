@@ -3,6 +3,7 @@ com/tcloud/dto/EmailNotificationEventBusDetail$EmailNotificationEventBusDetailBu
 com/tcloud/constant/RetryPolicyType.class
 com/tcloud/dto/XMLVisualNode$XMLVisualNodeBuilder.class
 com/tcloud/dto/ServiceConfiguration.class
+com/tcloud/entity/EventWorkflowStage.class
 com/tcloud/constant/ActionType.class
 com/tcloud/entity/Document$DocumentBuilder.class
 com/tcloud/entity/EmailTemplate.class
@@ -81,6 +82,7 @@ com/tcloud/dto/ApiWorkflowState$ApiWorkflowStateBuilder.class
 com/tcloud/dto/XMLVisualEdge.class
 com/tcloud/entity/RetryPolicyMetadata$RetryPolicyMetadataBuilder.class
 com/tcloud/entity/Document.class
+com/tcloud/entity/EventWorkflowJob.class
 com/tcloud/entity/DelayForm$DelayFormBuilderImpl.class
 com/tcloud/entity/WorkResponse$WorkResponseBuilderImpl.class
 com/tcloud/dto/Configuration$ConfigurationBuilder.class
@@ -93,6 +95,7 @@ com/tcloud/entity/DocumentBody$DocumentBodyBuilder.class
 com/tcloud/entity/EmailForm.class
 com/tcloud/dto/Workflow$WorkflowBuilder.class
 com/tcloud/dto/ApiWorkResult$ApiWorkResultBuilder.class
+com/tcloud/constant/EventWorkflowStatus.class
 com/tcloud/dto/Route.class
 com/tcloud/entity/TriggerForm.class
 com/tcloud/dto/ApiWorkflowState.class
@@ -113,6 +116,7 @@ com/tcloud/dto/WorkflowRunConfiguration.class
 com/tcloud/entity/RetryPolicy.class
 com/tcloud/constant/WorkflowState.class
 com/tcloud/constant/ClauseConditionType.class
+com/tcloud/entity/EventWorkflowStage$EventWorkflowStageBuilder.class
 com/tcloud/dto/WorkflowEventBusDetail$WorkflowEventBusDetailBuilderImpl.class
 com/tcloud/entity/WorkSuccess$WorkSuccessBuilder.class
 com/tcloud/dto/EventWorkflow.class
@@ -128,3 +132,4 @@ com/tcloud/entity/Clause.class
 com/tcloud/dto/HttpResponse$HttpResponseBuilder.class
 com/tcloud/entity/EventWorkflowForm$EventWorkflowFormBuilder.class
 com/tcloud/constant/EventWorkflowTriggerMethod.class
+com/tcloud/entity/EventWorkflowJob$EventWorkflowJobBuilder.class
