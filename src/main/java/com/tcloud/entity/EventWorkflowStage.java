@@ -15,6 +15,7 @@ import java.time.ZonedDateTime;
 public class EventWorkflowStage {
     private Long stageId;
     private Long jobId;
+    private String clientId;
     private EventWorkflowStep step;
     private EventWorkflowStatus status;
     private ZonedDateTime executedAt;
