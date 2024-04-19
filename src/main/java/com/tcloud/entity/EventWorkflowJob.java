@@ -14,6 +14,7 @@ import java.time.ZonedDateTime;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class EventWorkflowJob {
     private Long jobId;
+    private Long workflowId;
     private String clientId;
     private EventWorkflowStatus status;
     private ZonedDateTime scheduledAt;
