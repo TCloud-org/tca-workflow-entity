@@ -17,6 +17,7 @@ public class EventWorkflowStage {
     private Long jobId;
     private String clientId;
     private EventWorkflowStep step;
+    private Integer stepIndex;
     private EventWorkflowStatus status;
     private ZonedDateTime executedAt;
 }
