@@ -20,6 +20,7 @@ import java.time.ZonedDateTime;
 public class EmailNotificationEventBusDetail extends WorkflowEventBusDetail {
     private String eventId;
     private Long workflowId;
+    private Long jobId;
     private int stepIndex;
 
     public static EmailNotificationEventBusDetailBuilder<?, ?> create() {
