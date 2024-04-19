@@ -4,6 +4,7 @@ import lombok.Getter;
 
 @Getter
 public enum EventWorkflowStepType {
+    VERIFICATION("verification"),
     EMAIL("email"),
     DELAY("delay"),
     TRIGGER("trigger");
