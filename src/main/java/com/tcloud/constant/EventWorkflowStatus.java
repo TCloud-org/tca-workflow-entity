@@ -4,5 +4,6 @@ public enum EventWorkflowStatus {
     START,
     IN_PROGRESS,
     PENDING,
-    SUCCESSFUL
+    SUCCESSFUL,
+    FAILED
 }
