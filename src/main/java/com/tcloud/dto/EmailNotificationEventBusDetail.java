@@ -10,6 +10,8 @@ import lombok.extern.jackson.Jacksonized;
 
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
+import java.util.List;
+import java.util.Map;
 
 @Getter
 @EqualsAndHashCode(callSuper = true)
@@ -22,6 +24,11 @@ public class EmailNotificationEventBusDetail extends WorkflowEventBusDetail {
     private Long workflowId;
     private Long jobId;
     private int stepIndex;
+    private List<String> to;
+    private List<String> cc;
+    private List<String> bcc;
+    private Map<String, String> subjectMap;
+    private Map<String, String> messageMap;
 
     public static EmailNotificationEventBusDetailBuilder<?, ?> create() {
         return EmailNotificationEventBusDetail.builder()
