@@ -1,5 +1,6 @@
 package com.tcloud.dto;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.tcloud.constant.WorkflowEventBusService;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -19,6 +20,7 @@ import java.util.Map;
 @SuperBuilder(toBuilder = true)
 @Jacksonized
 @ToString(callSuper = true)
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class EmailNotificationEventBusDetail extends WorkflowEventBusDetail {
     private String eventId;
     private Long workflowId;
