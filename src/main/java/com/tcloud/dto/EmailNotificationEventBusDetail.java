@@ -28,7 +28,7 @@ public class EmailNotificationEventBusDetail extends WorkflowEventBusDetail {
     private List<String> cc;
     private List<String> bcc;
     private Map<String, String> subjectMap;
-    private Map<String, String> messageMap;
+    private Map<String, String> bodyMap;
 
     public static EmailNotificationEventBusDetailBuilder<?, ?> create() {
         return EmailNotificationEventBusDetail.builder()
