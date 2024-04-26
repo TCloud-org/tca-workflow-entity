@@ -101,7 +101,9 @@ com/tcloud/entity/TriggerForm.class
 com/tcloud/dto/ApiWorkflowState.class
 com/tcloud/constant/EventWorkflowStepType.class
 com/tcloud/dto/XMLParsedGraphResult.class
+com/tcloud/entity/EmailMessage.class
 com/tcloud/constant/WorkflowEventBusService.class
+com/tcloud/entity/EmailMessage$EmailMessageBuilder.class
 com/tcloud/entity/WorkFailure.class
 com/tcloud/entity/WorkResponse$WorkResponseBuilder.class
 com/tcloud/dto/Work$WorkBuilder.class

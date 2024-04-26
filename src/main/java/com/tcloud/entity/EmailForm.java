@@ -33,6 +33,5 @@ public class EmailForm extends EventWorkflowForm {
 
     private String subject;
 
-    @Builder.Default
-    private String message = "";
+    private EmailMessage message;
 }
