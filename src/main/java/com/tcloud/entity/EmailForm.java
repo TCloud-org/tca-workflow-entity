@@ -1,6 +1,5 @@
 package com.tcloud.entity;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Builder;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -11,7 +10,6 @@ import lombok.extern.jackson.Jacksonized;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 @Getter
 @EqualsAndHashCode(callSuper = true)
@@ -36,11 +34,5 @@ public class EmailForm extends EventWorkflowForm {
     private String subject;
 
     @Builder.Default
-    private List<Descendant> message = new ArrayList<>();
-
-    @JsonIgnore
-    public String toHtmlMessage() {
-        return message.stream().map(Descendant::getHtml)
-                .collect(Collectors.joining("\n"));
-    }
+    private String message = "";
 }
