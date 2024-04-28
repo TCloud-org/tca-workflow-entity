@@ -22,6 +22,7 @@ import java.util.Map;
 @ToString(callSuper = true)
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class EmailNotificationEventBusDetail extends WorkflowEventBusDetail {
+    private String type;
     private String eventId;
     private Long workflowId;
     private Long jobId;
@@ -35,6 +36,7 @@ public class EmailNotificationEventBusDetail extends WorkflowEventBusDetail {
     public static EmailNotificationEventBusDetailBuilder<?, ?> create() {
         return EmailNotificationEventBusDetail.builder()
                 .service(WorkflowEventBusService.EMAIL_NOTIFICATION)
+                .type("emailNotificationEventBusDetail")
                 .sentAt(ZonedDateTime.now(ZoneId.of("UTC")));
     }
 }
