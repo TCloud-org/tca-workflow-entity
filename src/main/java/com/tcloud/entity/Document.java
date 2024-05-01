@@ -74,8 +74,12 @@ public class Document {
     }
 
     public <T> T extractEntityByType(@NonNull final String key,
-                                     @NonNull final Class<T> classType) throws IOException {
-        return objectMapper.readValue(documentBody.getEntities().get(key), classType);
+                                     @NonNull final Class<T> classType) {
+        try {
+            return objectMapper.readValue(documentBody.getEntities().get(key), classType);
+        } catch (final Exception e) {
+            throw new RuntimeException(e);
+        }
     }
 
     public String getEntityAsString(@NonNull final String key) {
