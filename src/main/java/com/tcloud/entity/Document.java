@@ -3,6 +3,7 @@ package com.tcloud.entity;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.tcloud.Serializer;
 import com.tcloud.dto.DocumentEntityChangeLog;
 import lombok.Builder;
 import lombok.Data;
@@ -75,11 +76,7 @@ public class Document {
 
     public <T> T extractEntityByType(@NonNull final String key,
                                      @NonNull final Class<T> classType) {
-        try {
-            return objectMapper.readValue(documentBody.getEntities().get(key), classType);
-        } catch (final Exception e) {
-            throw new RuntimeException(e);
-        }
+        return Serializer.deserialize(documentBody.getEntities().get(key), classType);
     }
 
     public String getEntityAsString(@NonNull final String key) {
