@@ -9,6 +9,7 @@ import lombok.Data;
 import lombok.NonNull;
 import lombok.extern.jackson.Jacksonized;
 
+import java.io.IOException;
 import java.util.Map;
 import java.util.UUID;
 import java.util.concurrent.Callable;
@@ -70,6 +71,11 @@ public class Document {
 
     public byte[] getEntity(@NonNull final String key) {
         return documentBody.getEntities().get(key);
+    }
+
+    public <T> T extractEntityByType(@NonNull final String key,
+                                     @NonNull final Class<T> classType) throws IOException {
+        return objectMapper.readValue(documentBody.getEntities().get(key), classType);
     }
 
     public String getEntityAsString(@NonNull final String key) {

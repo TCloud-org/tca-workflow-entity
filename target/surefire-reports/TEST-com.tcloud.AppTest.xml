@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-17.0.1.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/tungdinh/CS/tcloud/tca-workflow-entity/target/surefire/surefirebooter10552239591122363272.jar /Users/tungdinh/CS/tcloud/tca-workflow-entity/target/surefire 2024-04-28T00-11-17_470-jvmRun1 surefire14646173844741552493tmp surefire_017999497528853477757tmp"/>
+    <property name="sun.java.command" value="/Users/tungdinh/CS/tcloud/tca-workflow-entity/target/surefire/surefirebooter17468502226980744671.jar /Users/tungdinh/CS/tcloud/tca-workflow-entity/target/surefire 2024-05-01T15-52-56_409-jvmRun1 surefire1713571099428121228tmp surefire_010441710082271105490tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/tungdinh/CS/tcloud/tca-workflow-entity/target/test-classes:/Users/tungdinh/CS/tcloud/tca-workflow-entity/target/classes:/Users/tungdinh/.m2/repository/org/projectlombok/lombok/1.18.26/lombok-1.18.26.jar:/Users/tungdinh/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.17.0-rc1/jackson-databind-2.17.0-rc1.jar:/Users/tungdinh/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.17.0-rc1/jackson-annotations-2.17.0-rc1.jar:/Users/tungdinh/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.17.0-rc1/jackson-core-2.17.0-rc1.jar:/Users/tungdinh/.m2/repository/net/bytebuddy/byte-buddy/1.14.9/byte-buddy-1.14.9.jar:/Users/tungdinh/.m2/repository/jakarta/validation/jakarta.validation-api/3.1.0-M1/jakarta.validation-api-3.1.0-M1.jar:/Users/tungdinh/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/tungdinh/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
@@ -28,7 +28,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/Users/tungdinh/CS/tcloud/tca-workflow-entity/target/surefire/surefirebooter10552239591122363272.jar"/>
+    <property name="surefire.real.class.path" value="/Users/tungdinh/CS/tcloud/tca-workflow-entity/target/surefire/surefirebooter17468502226980744671.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="17.0.1+12-LTS-39"/>
@@ -54,5 +54,5 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="shouldAnswerWithTrue" classname="com.tcloud.AppTest" time="0.001"/>
+  <testcase name="shouldAnswerWithTrue" classname="com.tcloud.AppTest" time="0"/>
 </testsuite>
