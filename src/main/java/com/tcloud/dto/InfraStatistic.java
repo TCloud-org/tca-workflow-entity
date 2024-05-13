@@ -12,9 +12,9 @@ import lombok.extern.jackson.Jacksonized;
 @AllArgsConstructor
 @Jacksonized
 public class InfraStatistic {
-    private int totalWorkflows;
-    private int totalGraphs;
-    private int totalServices;
-    private int totalRetryPolicies;
-    private int totalAuthTokens;
+    private long totalWorkflows;
+    private long totalGraphs;
+    private long totalServices;
+    private long totalRetryPolicies;
+    private long totalAuthTokens;
 }
