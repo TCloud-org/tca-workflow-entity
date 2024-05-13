@@ -26,6 +26,7 @@ com/tcloud/dto/XMLVisualization$XMLVisualizationBuilder.class
 com/tcloud/dto/XMLVisualNodeData.class
 com/tcloud/dto/ServiceConfiguration$ServiceConfigurationBuilder.class
 com/tcloud/entity/DateRange$DateRangeBuilder.class
+com/tcloud/dto/StepWorkflowBilling.class
 com/tcloud/entity/DocumentBody.class
 com/tcloud/entity/EventWorkflowForm$EventWorkflowFormBuilderImpl.class
 com/tcloud/dto/EventWorkflow$EventWorkflowBuilder.class
@@ -88,6 +89,7 @@ com/tcloud/entity/DelayForm$DelayFormBuilderImpl.class
 com/tcloud/entity/WorkResponse$WorkResponseBuilderImpl.class
 com/tcloud/dto/Configuration$ConfigurationBuilder.class
 com/tcloud/entity/Clause$ClauseBuilder.class
+com/tcloud/dto/StepWorkflowBilling$StepWorkflowBillingBuilder.class
 com/tcloud/entity/StateNotification$StateNotificationBuilder.class
 com/tcloud/entity/RetentionPeriod.class
 com/tcloud/dto/WorkflowEventBusDetail$WorkflowEventBusDetailBuilder.class
