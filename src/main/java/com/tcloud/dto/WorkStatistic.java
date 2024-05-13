@@ -14,7 +14,7 @@ import java.util.List;
 @AllArgsConstructor
 @Jacksonized
 public class WorkStatistic {
-    private long totalWorks;
+    private List<Work> works;
     private List<Work> successes;
     private List<Work> progresses;
     private List<Work> failures;
