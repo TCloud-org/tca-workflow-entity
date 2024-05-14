@@ -83,6 +83,11 @@ public class Document {
         return callAndHandleException(() -> objectMapper.writeValueAsString(documentBody.getEntities().get(key)));
     }
 
+    public Document deepCopy() {
+        final byte[] src = Serializer.serializeAsBytes(this);
+        return Serializer.deserialize(src, Document.class);
+    }
+
     private static <T> T callAndHandleException(@NonNull final Callable<T> func) {
         try {
             return func.call();
