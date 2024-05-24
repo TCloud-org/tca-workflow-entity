@@ -2,9 +2,6 @@ package com.tcloud.dto;
 
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
-import com.tcloud.entity.WorkFailure;
-import com.tcloud.entity.WorkPending;
-import com.tcloud.entity.WorkSuccess;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
