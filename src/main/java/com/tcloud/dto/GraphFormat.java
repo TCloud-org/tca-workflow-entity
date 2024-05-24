@@ -12,7 +12,6 @@ import lombok.extern.jackson.Jacksonized;
 @Getter
 @EqualsAndHashCode
 @NoArgsConstructor
-@AllArgsConstructor
 @SuperBuilder(toBuilder = true)
 @Jacksonized
 @JsonTypeInfo(use = JsonTypeInfo.Id.NAME, property = "type")
