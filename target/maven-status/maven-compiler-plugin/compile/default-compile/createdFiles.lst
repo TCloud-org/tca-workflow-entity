@@ -115,6 +115,7 @@ com/tcloud/entity/TriggerForm.class
 com/tcloud/dto/ApiWorkflowState.class
 com/tcloud/constant/EventWorkflowStepType.class
 com/tcloud/dto/XMLParsedGraphResult.class
+com/tcloud/dto/GraphArch$GraphArchBuilder.class
 com/tcloud/entity/EmailMessage.class
 com/tcloud/constant/WorkflowEventBusService.class
 com/tcloud/entity/EmailMessage$EmailMessageBuilder.class
@@ -150,6 +151,7 @@ com/tcloud/entity/EmailForm$EmailFormBuilder.class
 com/tcloud/entity/RetryPolicy$RetryPolicyBuilder.class
 com/tcloud/dto/UIBuilderGraphState$UIBuilderGraphStateBuilderImpl.class
 com/tcloud/entity/Clause.class
+com/tcloud/dto/GraphArch.class
 com/tcloud/dto/GraphFormat.class
 com/tcloud/dto/HttpResponse$HttpResponseBuilder.class
 com/tcloud/entity/EventWorkflowForm$EventWorkflowFormBuilder.class
