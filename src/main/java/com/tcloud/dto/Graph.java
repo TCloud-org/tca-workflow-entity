@@ -36,6 +36,8 @@ public class Graph {
 
     private XMLParsedGraphResult parsedGraphResult;
 
+    private GraphArch graphArch;
+
     @Min(1)
     private Long version;
 
