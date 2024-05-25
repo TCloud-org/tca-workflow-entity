@@ -60,6 +60,7 @@ com/tcloud/dto/DocumentEntityChangeLog.class
 com/tcloud/dto/InfraStatistic.class
 com/tcloud/constant/GraphFormatType.class
 com/tcloud/dto/ApiWorkResult.class
+com/tcloud/constant/StateType.class
 com/tcloud/entity/RetentionPeriod$RetentionPeriodBuilder.class
 com/tcloud/dto/XMLVisualNode.class
 com/tcloud/dto/GraphState$GraphStateBuilder.class

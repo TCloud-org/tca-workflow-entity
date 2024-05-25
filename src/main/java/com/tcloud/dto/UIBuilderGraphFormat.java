@@ -14,5 +14,6 @@ import java.util.List;
 @SuperBuilder(toBuilder = true)
 @Jacksonized
 public class UIBuilderGraphFormat extends GraphFormat {
+    private Long retryPolicyId;
     private List<UIBuilderGraphState> states;
 }

@@ -1,5 +1,6 @@
 package com.tcloud.dto;
 
+import com.tcloud.constant.StateType;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -14,6 +15,7 @@ import java.util.List;
 @SuperBuilder(toBuilder = true)
 @Jacksonized
 public class UIBuilderGraphState {
+    private StateType type;
     private String name;
     private String service;
     private String operation;
