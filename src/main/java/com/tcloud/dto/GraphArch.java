@@ -7,8 +7,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.extern.jackson.Jacksonized;
 
-import java.util.List;
-
 @Data
 @Builder(toBuilder = true)
 @NoArgsConstructor
@@ -16,6 +14,6 @@ import java.util.List;
 @Jacksonized
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class GraphArch {
-    Long retryPolicyId;
-    List<UIBuilderGraphState> states;
+    XMLGraphFormat xmlGraphFormat;
+    UIBuilderGraphFormat uiBuilderGraphFormat;
 }
