@@ -15,4 +15,6 @@ public class GraphIdentifier extends Identifier {
     public static final String ROOT = "graph";
 
     private String clientId;
+    private String workflowName;
+    private String version;
 }
