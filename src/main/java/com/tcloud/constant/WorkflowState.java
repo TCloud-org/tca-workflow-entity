@@ -1,19 +1,15 @@
 package com.tcloud.constant;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+
+@Getter
+@AllArgsConstructor
 public enum WorkflowState {
-    PRE_START("pre-start"),
-    INITIAL("initial-state"),
-    TERMINAL("terminal");
+    START("Start"),
+    END("End");
 
     private final String value;
-
-    WorkflowState(String state) {
-        this.value = state;
-    }
-
-    public String getValue() {
-        return value;
-    }
 
     public static WorkflowState of(String value) {
         for (WorkflowState state : WorkflowState.values()) {
