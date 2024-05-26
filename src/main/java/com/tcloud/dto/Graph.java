@@ -16,19 +16,15 @@ import java.time.ZonedDateTime;
 @Jacksonized
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Graph {
-    private Long graphId;
-
-    private String workflowName;
+    private String graphId;
 
     private String clientId;
+
+    private String workflowName;
 
     private String description;
 
     private String alias;
-
-    private String xmlContent;
-
-    private XMLParsedGraphResult parsedGraphResult;
 
     private GraphArch graphArch;
 
