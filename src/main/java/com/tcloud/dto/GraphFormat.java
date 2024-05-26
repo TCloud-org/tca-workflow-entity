@@ -19,4 +19,5 @@ import lombok.extern.jackson.Jacksonized;
         @JsonSubTypes.Type(value = UIBuilderGraphFormat.class, name = "uiBuilderGraphFormat"),
 })
 public class GraphFormat {
+    private String workflowName;
 }
