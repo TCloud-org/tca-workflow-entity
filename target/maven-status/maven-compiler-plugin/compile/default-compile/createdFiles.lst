@@ -20,6 +20,7 @@ com/tcloud/dto/UIBuilderGraphFormat.class
 com/tcloud/dto/Work.class
 com/tcloud/entity/identifier/WorkflowIdentifier.class
 com/tcloud/dto/RouteMetadata.class
+com/tcloud/entity/identifier/GraphIdentifier$GraphIdentifierBuilderImpl.class
 com/tcloud/entity/WorkflowEvent$WorkflowEventBuilder.class
 com/tcloud/entity/GetRetryPolicyByIdOutput$GetRetryPolicyByIdOutputBuilder.class
 com/tcloud/entity/EmailTemplate$EmailTemplateBuilder.class
@@ -99,6 +100,7 @@ com/tcloud/dto/XMLVisualEdge.class
 com/tcloud/entity/RetryPolicyMetadata$RetryPolicyMetadataBuilder.class
 com/tcloud/entity/Document.class
 com/tcloud/entity/EventWorkflowJob.class
+com/tcloud/entity/identifier/GraphIdentifier$GraphIdentifierBuilder.class
 com/tcloud/entity/identifier/WorkIdentifier.class
 com/tcloud/entity/DelayForm$DelayFormBuilderImpl.class
 com/tcloud/entity/WorkResponse$WorkResponseBuilderImpl.class

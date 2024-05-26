@@ -12,6 +12,8 @@ import lombok.extern.jackson.Jacksonized;
 @SuperBuilder(toBuilder = true)
 @Jacksonized
 public class WorkIdentifier extends Identifier {
+    public static final String ROOT = "work";
+
     private String clientId;
     private String workflowName;
 }
