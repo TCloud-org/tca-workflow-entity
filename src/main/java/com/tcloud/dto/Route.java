@@ -14,11 +14,13 @@ import java.time.ZonedDateTime;
 @AllArgsConstructor
 @Jacksonized
 public class Route {
-    private Long routeId;
+    private String routeId;
+
+    private String idempotentKey;
 
     private String clientId;
 
-    private Long graphId;
+    private String graphId;
 
     private String workflowName;
 
@@ -33,8 +35,6 @@ public class Route {
     private String resultType;
 
     private String resultName;
-
-    private String workflowAlias;
 
     private ZonedDateTime createdAt;
 
