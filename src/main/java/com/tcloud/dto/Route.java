@@ -22,7 +22,7 @@ public class Route {
 
     private String graphId;
 
-    private String workflowName;
+    private String workflowId;
 
     private String workId;
 

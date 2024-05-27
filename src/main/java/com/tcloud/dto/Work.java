@@ -31,7 +31,7 @@ public class Work {
 
     private String graphId;
 
-    private String workflowName;
+    private String workflowId;
 
     private Long version;
 
