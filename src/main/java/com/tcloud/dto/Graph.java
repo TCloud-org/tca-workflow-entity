@@ -22,6 +22,8 @@ public class Graph {
 
     private String workflowName;
 
+    private String workflowId;
+
     private String description;
 
     private String alias;
