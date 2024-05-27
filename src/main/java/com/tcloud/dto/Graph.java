@@ -20,8 +20,6 @@ public class Graph {
 
     private String clientId;
 
-    private String workflowName;
-
     private String workflowId;
 
     private String description;
