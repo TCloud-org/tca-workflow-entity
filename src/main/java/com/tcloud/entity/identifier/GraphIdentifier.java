@@ -16,5 +16,4 @@ public class GraphIdentifier extends Identifier {
 
     private String clientId;
     private String workflowName;
-    private String version;
 }
