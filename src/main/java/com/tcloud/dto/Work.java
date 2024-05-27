@@ -15,6 +15,8 @@ public class Work {
 
     private String workId;
 
+    private String idempotentKey;
+
     private String clientId;
 
     private String source;
@@ -27,9 +29,9 @@ public class Work {
 
     private String resultName;
 
-    private Long graphId;
+    private String graphId;
 
-    private Long workflowId;
+    private String workflowName;
 
     private Long version;
 
