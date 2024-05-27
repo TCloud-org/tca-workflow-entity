@@ -25,6 +25,7 @@ com/tcloud/entity/WorkflowEvent$WorkflowEventBuilder.class
 com/tcloud/entity/GetRetryPolicyByIdOutput$GetRetryPolicyByIdOutputBuilder.class
 com/tcloud/entity/EmailTemplate$EmailTemplateBuilder.class
 com/tcloud/entity/WorkFailure$WorkFailureBuilder.class
+com/tcloud/entity/identifier/RouteIdentifier.class
 com/tcloud/entity/EventWorkflowStep$EventWorkflowStepBuilder.class
 com/tcloud/constant/DateUnit.class
 com/tcloud/dto/Route$RouteBuilder.class
@@ -110,6 +111,7 @@ com/tcloud/dto/StepWorkflowBilling$StepWorkflowBillingBuilder.class
 com/tcloud/entity/StateNotification$StateNotificationBuilder.class
 com/tcloud/entity/RetentionPeriod.class
 com/tcloud/dto/WorkflowEventBusDetail$WorkflowEventBusDetailBuilder.class
+com/tcloud/entity/identifier/RouteIdentifier$RouteIdentifierBuilder.class
 com/tcloud/dto/GraphFormat$GraphFormatBuilder.class
 com/tcloud/entity/WorkFailure$WorkFailureBuilderImpl.class
 com/tcloud/dto/InfraStatistic$InfraStatisticBuilder.class
@@ -154,6 +156,7 @@ com/tcloud/dto/EventWorkflow.class
 com/tcloud/entity/WorkSuccess$WorkSuccessBuilderImpl.class
 com/tcloud/dto/UIBuilderGraphFormat$UIBuilderGraphFormatBuilderImpl.class
 com/tcloud/entity/identifier/GraphIdentifier.class
+com/tcloud/entity/identifier/RouteIdentifier$RouteIdentifierBuilderImpl.class
 com/tcloud/entity/WorkflowEvent.class
 com/tcloud/dto/WorkStatistic$WorkStatisticBuilder.class
 com/tcloud/entity/identifier/WorkIdentifier$WorkIdentifierBuilder.class
