@@ -64,16 +64,13 @@ com/tcloud/dto/XMLTreeNode.class
 com/tcloud/dto/DocumentEntityChangeLog.class
 com/tcloud/dto/InfraStatistic.class
 com/tcloud/constant/GraphFormatType.class
-com/tcloud/dto/ApiWorkResult.class
 com/tcloud/constant/StateType.class
 com/tcloud/entity/RetentionPeriod$RetentionPeriodBuilder.class
 com/tcloud/dto/XMLVisualNode.class
-com/tcloud/dto/GraphState$GraphStateBuilder.class
 com/tcloud/entity/TriggerForm$TriggerFormBuilder.class
 com/tcloud/constant/ElementType.class
 com/tcloud/Translator/HTMLTranslator.class
 com/tcloud/entity/TriggerForm$TriggerFormBuilderImpl.class
-com/tcloud/dto/GraphState.class
 com/tcloud/dto/HttpResponse.class
 com/tcloud/dto/XMLGraphStateResult$XMLGraphStateResultBuilder.class
 com/tcloud/dto/WorkflowEventBusDetail.class
@@ -96,7 +93,6 @@ com/tcloud/entity/WorkPending.class
 com/tcloud/entity/GetRetryPolicyByIdOutput.class
 com/tcloud/dto/XMLGraphStateResult.class
 com/tcloud/dto/EmailNotificationEventBusDetail.class
-com/tcloud/dto/ApiWorkflowState$ApiWorkflowStateBuilder.class
 com/tcloud/dto/XMLVisualEdge.class
 com/tcloud/entity/RetryPolicyMetadata$RetryPolicyMetadataBuilder.class
 com/tcloud/entity/Document.class
@@ -118,11 +114,9 @@ com/tcloud/dto/InfraStatistic$InfraStatisticBuilder.class
 com/tcloud/entity/DocumentBody$DocumentBodyBuilder.class
 com/tcloud/entity/EmailForm.class
 com/tcloud/dto/Workflow$WorkflowBuilder.class
-com/tcloud/dto/ApiWorkResult$ApiWorkResultBuilder.class
 com/tcloud/constant/EventWorkflowStatus.class
 com/tcloud/dto/Route.class
 com/tcloud/entity/TriggerForm.class
-com/tcloud/dto/ApiWorkflowState.class
 com/tcloud/constant/EventWorkflowStepType.class
 com/tcloud/dto/XMLParsedGraphResult.class
 com/tcloud/dto/GraphArch$GraphArchBuilder.class
