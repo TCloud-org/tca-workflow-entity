@@ -17,7 +17,7 @@ import java.time.ZonedDateTime;
 @AllArgsConstructor
 @Jacksonized
 public class ServiceConfiguration {
-    private Long serviceId;
+    private String serviceId;
 
     private String serviceName;
 
