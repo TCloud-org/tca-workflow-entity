@@ -95,6 +95,7 @@ com/tcloud/dto/XMLGraphStateResult.class
 com/tcloud/dto/EmailNotificationEventBusDetail.class
 com/tcloud/dto/XMLVisualEdge.class
 com/tcloud/entity/RetryPolicyMetadata$RetryPolicyMetadataBuilder.class
+com/tcloud/entity/identifier/ServiceConfigurationIdentifier$ServiceConfigurationIdentifierBuilderImpl.class
 com/tcloud/entity/Document.class
 com/tcloud/entity/EventWorkflowJob.class
 com/tcloud/entity/identifier/GraphIdentifier$GraphIdentifierBuilder.class
@@ -150,9 +151,11 @@ com/tcloud/dto/EventWorkflow.class
 com/tcloud/entity/WorkSuccess$WorkSuccessBuilderImpl.class
 com/tcloud/dto/UIBuilderGraphFormat$UIBuilderGraphFormatBuilderImpl.class
 com/tcloud/entity/identifier/GraphIdentifier.class
+com/tcloud/entity/identifier/ServiceConfigurationIdentifier$ServiceConfigurationIdentifierBuilder.class
 com/tcloud/entity/identifier/RouteIdentifier$RouteIdentifierBuilderImpl.class
 com/tcloud/entity/WorkflowEvent.class
 com/tcloud/dto/WorkStatistic$WorkStatisticBuilder.class
+com/tcloud/entity/identifier/ServiceConfigurationIdentifier.class
 com/tcloud/entity/identifier/WorkIdentifier$WorkIdentifierBuilder.class
 com/tcloud/dto/XMLGraphState.class
 com/tcloud/entity/WorkflowConfiguration$WorkflowConfigurationBuilder.class
