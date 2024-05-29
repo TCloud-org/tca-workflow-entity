@@ -12,7 +12,7 @@ import lombok.extern.jackson.Jacksonized;
 @AllArgsConstructor
 @Jacksonized
 public class RetryConfig {
-    private long retryPolicyId;
+    private String retryPolicyId;
     private int retryIndex;
 
     public static RetryConfig create() {
