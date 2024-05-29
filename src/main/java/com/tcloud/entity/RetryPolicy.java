@@ -12,7 +12,7 @@ import lombok.extern.jackson.Jacksonized;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class RetryPolicy {
 
-    private long retryPolicyId;
+    private String retryPolicyId;
 
     private String name;
 
