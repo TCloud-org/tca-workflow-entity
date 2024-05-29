@@ -6,6 +6,7 @@ com/tcloud/constant/RetryPolicyType.class
 com/tcloud/dto/XMLVisualNode$XMLVisualNodeBuilder.class
 com/tcloud/dto/ServiceConfiguration.class
 com/tcloud/entity/EventWorkflowStage.class
+com/tcloud/entity/identifier/RetryPolicyIdentifier.class
 com/tcloud/constant/ActionType.class
 com/tcloud/dto/UIBuilderGraphBranch$UIBuilderGraphBranchBuilderImpl.class
 com/tcloud/entity/Document$DocumentBuilder.class
@@ -48,6 +49,7 @@ com/tcloud/entity/WorkflowConfiguration.class
 com/tcloud/dto/UIBuilderGraphFormat$UIBuilderGraphFormatBuilder.class
 com/tcloud/dto/XMLParsedGraphResult$XMLParsedGraphResultBuilder.class
 com/tcloud/dto/Graph$GraphBuilder.class
+com/tcloud/entity/identifier/RetryPolicyIdentifier$RetryPolicyIdentifierBuilder.class
 com/tcloud/dto/XMLGraphFormat.class
 com/tcloud/entity/CustomTime.class
 com/tcloud/entity/identifier/Identifier$IdentifierBuilder.class
@@ -146,6 +148,7 @@ com/tcloud/dto/UIBuilderGraphBranch.class
 com/tcloud/entity/EventWorkflowStage$EventWorkflowStageBuilder.class
 com/tcloud/dto/XMLGraphFormat$XMLGraphFormatBuilderImpl.class
 com/tcloud/dto/WorkflowEventBusDetail$WorkflowEventBusDetailBuilderImpl.class
+com/tcloud/entity/identifier/RetryPolicyIdentifier$RetryPolicyIdentifierBuilderImpl.class
 com/tcloud/entity/WorkSuccess$WorkSuccessBuilder.class
 com/tcloud/dto/EventWorkflow.class
 com/tcloud/entity/WorkSuccess$WorkSuccessBuilderImpl.class
