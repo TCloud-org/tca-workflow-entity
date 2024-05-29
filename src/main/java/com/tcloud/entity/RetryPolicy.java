@@ -6,6 +6,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.extern.jackson.Jacksonized;
 
+import java.time.ZonedDateTime;
+
 @Data
 @Builder(toBuilder = true)
 @Jacksonized
@@ -51,4 +53,8 @@ public class RetryPolicy {
     private int retryInterval;
 
     private RetryPolicyMetadata metadata;
+
+    private ZonedDateTime createdAt;
+
+    private ZonedDateTime updatedAt;
 }
