@@ -19,5 +19,6 @@ public class UIBuilderGraphState {
     private String name;
     private String service;
     private String operation;
+    private Long period;
     private List<UIBuilderGraphBranch> branches;
 }
