@@ -10,7 +10,6 @@ import lombok.Data;
 import lombok.NonNull;
 import lombok.extern.jackson.Jacksonized;
 
-import java.io.IOException;
 import java.util.Map;
 import java.util.UUID;
 import java.util.concurrent.Callable;
@@ -48,10 +47,21 @@ public class Document {
         changeLog.getRemoved().keySet().forEach(this::removeEntity);
     }
 
-    public void putEntity(@NonNull final String key, @NonNull final byte[] value) {
+    public void putEntity(@NonNull final String key, final byte[] value) {
         callAndHandleException(() -> {
             final Map<String, byte[]> entities = documentBody.getEntities();
             entities.put(key, value);
+            documentBody = documentBody.toBuilder()
+                    .entities(entities)
+                    .build();
+            return null;
+        });
+    }
+
+    public void putEntity(@NonNull final String key, final Object value) {
+        callAndHandleException(() -> {
+            final Map<String, byte[]> entities = documentBody.getEntities();
+            entities.put(key, Serializer.serializeAsBytes(value));
             documentBody = documentBody.toBuilder()
                     .entities(entities)
                     .build();
